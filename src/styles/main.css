@@ -1158,3 +1158,9 @@ nav a,
 .about .portrait {
   filter: none;
 }
+/* 원본 상세 화면: 첫 사진 아래 두 번째 사진은 본문 오른쪽에서 바로 시작합니다. */
+@media (min-width: 701px) {
+  .original-detail-hero > img { height: min(39.1vw, 563px); }
+  .original-detail-content { grid-template-columns: 1fr 2fr; gap: 24px; }
+  .original-detail-images { padding-top: 0; }
+}
