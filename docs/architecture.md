@@ -4,6 +4,7 @@
 src/
   main.ts                 페이지 조립과 내비게이션
   components/             재사용하는 화면 요소
+    intro.ts              원본 인트로 슬라이더
     motion.ts             등장·사진·커서·스크롤 진행 효과
     dom.ts                안전한 DOM 생성
     building-list.ts      건물 카드와 상세 설명
@@ -19,6 +20,7 @@ src/
 public/images/
   logo.png                사이트 로고 및 파비콘 (기존 사이트)
   buildings/              건물별 사진
+  intro/                  원본 인트로 슬라이더 사진
   about/                  소개용 이미지
   news/                   뉴스 이미지
 docs/                     구조·규칙·운영·작성 안내

@@ -493,3 +493,19 @@ nav a,
   height: 34px;
   object-fit: contain;
 }
+
+/* 원본 인트로: 좁은 사진과 넓은 사진이 이어지는 슬라이더 */
+.intro-wrapper { position: relative; }
+.intro-viewport { overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+.intro-viewport::-webkit-scrollbar { display: none; }
+.intro-track { display: flex; gap: 14px; height: clamp(350px, 55vh, 650px); }
+.intro-image { display: block; height: 100%; object-fit: cover; border-radius: 8px; flex: 0 0 24%; scroll-snap-align: start; }
+.intro-image-wide { flex-basis: 49%; }
+.intro-arrow { position: absolute; top: 50%; transform: translateY(-50%); border: 0; background: #000000; color: #ffffff; border-radius: 50%; width: 44px; height: 44px; font-size: 30px; cursor: pointer; }
+.intro-previous { left: 12px; }
+.intro-next { right: 12px; }
+.intro-captions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8%; }
+.intro-captions span { text-align: center; border-bottom: 1px solid #000000; padding: 12px 0; font-size: 13px; }
+@media (max-width: 700px) { .intro-track { height: 52vh; min-height: 300px; gap: 8px; } .intro-image { flex-basis: 42%; } .intro-image-wide { flex-basis: 75%; } .intro-captions { gap: 10px; } .intro-captions span { font-size: 11px; } }
+.news-content p { font-size: 15px; line-height: 1.75; max-width: 720px; }
+.news-item:has(.news-content:first-child) { grid-template-columns: 1fr auto; }

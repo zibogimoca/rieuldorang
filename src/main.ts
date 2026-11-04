@@ -7,6 +7,7 @@ import { news } from "./content/news";
 import { site } from "./content/site";
 import { buildingList } from "./components/building-list";
 import { element } from "./components/dom";
+import { intro as createIntro } from "./components/intro";
 
 import { translations, type Locale } from "./content/translations";
 
@@ -76,29 +77,7 @@ function render(): void {
   const main = element("main");
   main.id = "main";
   // 원본 순서: 메인 문구 → 최근 프로젝트 → 대표 소개 → 뉴스.
-  const hero = element("section", "hero");
-  const title = element("h1", "visually-hidden", site.headline.join(" · "));
-  const heroGallery = element("div", "hero-gallery");
-  const introProjects = ["ara-o-wall-house", "aphae-de-sel", "maemisong"];
-  introProjects
-    .map((id) => buildings.find((building) => building.id === id))
-    .forEach((building, index) => {
-      if (!building) return;
-      if (!building.image) return;
-      const card = element("a", "hero-panel");
-      card.href = building.href ?? "#spaces";
-      card.setAttribute(
-        "aria-label",
-        `${site.headline[index]} — ${t.projectNames[building.id] ?? building.name}`,
-      );
-      const image = element("img");
-      image.src =
-        import.meta.env.BASE_URL + building.image.src.replace(/^\//, "");
-      image.alt = "";
-      card.append(image, element("span", "hero-caption", site.headline[index]));
-      heroGallery.append(card);
-    });
-  hero.append(title, heroGallery);
+  const hero = createIntro(locale);
   const notice = element("p", "notice", t.notice);
   const spaces = element("section", "section");
   spaces.id = "spaces";
@@ -181,20 +160,17 @@ function render(): void {
   for (const item of news) {
     const link = element("a", "news-item");
     link.href = item.href;
-    const image = element("img");
-    image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
-    image.alt =
-      locale === "ko"
-        ? item.image.alt
-        : item.id === "principal"
-          ? "Portrait of principal architect Kim, Seongyoul"
-          : item.title;
-    image.loading = "lazy";
-    link.append(
-      image,
-      element("h3", "", t.newsNames[item.id] ?? item.title),
-      element("span", "", `${t.more} ↗`),
-    );
+    if (item.image) {
+      const image = element("img");
+      image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
+      image.alt = item.image.alt;
+      image.loading = "lazy";
+      link.append(image);
+    }
+    const content = element("div", "news-content");
+    content.append(element("h3", "", t.newsNames[item.id] ?? item.title));
+    if (item.body) content.append(element("p", "", item.body[locale]));
+    link.append(content, element("span", "", `${t.more} ↗`));
     journal.append(link);
   }
   main.append(hero, notice, spaces, about, journal);
