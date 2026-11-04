@@ -12,16 +12,18 @@ export function intro(locale: "ko" | "en"): HTMLElement {
   const track = element("div", "intro-track");
   const sources = ["01.jpg", "02.jpg", "03.png", "04.jpg", "05.jpg", "06.jpg"];
   sources.forEach((source, index) => {
-    const image = element(
-      "img",
+    const frame = element(
+      "div",
       `intro-image intro-image-${index % 2 ? "wide" : "narrow"}`,
     );
+    const image = element("img", "intro-photo");
     image.src = `${import.meta.env.BASE_URL}images/intro/${source}`;
     image.alt =
       locale === "ko"
         ? `건축 작품 ${index + 1}`
         : `Architecture project ${index + 1}`;
-    track.append(image);
+    frame.append(image);
+    track.append(frame);
   });
   const previous = element("button", "intro-arrow intro-previous", "‹");
   const next = element("button", "intro-arrow intro-next", "›");
