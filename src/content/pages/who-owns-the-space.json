@@ -171,6 +171,120 @@
       "a965e7_d96509b0a994413bbe7397d6bccbf24d~mv2.png": 4294
     },
     "heroWidth": 369,
-    "heroHeight": 207
+    "heroHeight": 207,
+    "heroY": 54,
+    "heroBodyHeight": 421,
+    "heroText": [
+      {
+        "x": 11,
+        "y": 272,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 11,
+        "y": 305,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 339,
+        "w": 353,
+        "h": 120,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "3": {
+        "x": 18,
+        "y": 1076,
+        "w": 355,
+        "h": 382,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 32,
+        "renderText": "The COVID-19 pandemic gave humankind its first experience of a kind of fear that is very different from what we experience in response to \"common\" disasters-such as climate abnormalities and more visible man-made disasters-that is: the fear of losing what is commonplace. Through social distancing, the pandemic instantly turned everything about our daily routines into a distant memory. This new fear awakened us to a perspective that is completely different from what we used to process our fears of more tangible things. This artwork hopes to convey this perspective through the medium of experience. \nThe advent of the pandemic age has made us dream even more of clean, nature-friendly spaces. I want to show through this artwork, however, that such \"clean\" spaces can actually be a warning to humans and their habits.\n​\n코로나로 인한 팬데믹의 사건을 맞이하면서 인류사회는 기후 재난 등의 물리적공포 외에 새로운 공포를 경험하게 되었다. 바로 평범함을 잃어가는 공포다. 늘 누려오던 평범한 일상이 사회적 거리두기로 인해 한순간에 소중한 추억이 되어버린 것이다. 이러한 공포는 물리적 공포와는 전혀 다른 관점을 일깨워주었다. 이번 작품의 개념은 이 관점을 경험을 통해서 전달하는 것이다.\n​팬데믹 시대를 맞이하여 인간은 더욱더 청정한 자연 친화적인 공간을 꿈꾸게 되었다. 그러나 그러한 청정 공간이 도리어 인간에게 경고를 보낼 수도 있다는 것을 작품을 통해 보여주려 한다."
+      },
+      "5": {
+        "x": 18,
+        "y": 2053,
+        "w": 354,
+        "h": 299,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 32,
+        "renderText": "The tree is a life form that is familiar to us and has a (virtually and universally) positive connotation. A tree, which is supposed to stand with its branches spread toward the sky, was placed in each corner inside a hexahedral frame with its branches reaching toward the center, where there is a place set up for the visitor to stand. This was intentional: by \"shifting\" the direction of a life form's movements from its own survival to the human, the visitor is made to feel afraid that he/she will be pricked by the branches. I tried to show that our everyday lives can be threatened by ordinary things (a tree) and warn the viewer that nature, in order to survive, can drive humankind to its demise.\n​\n​나무는 우리에게 아주 친숙하고 긍정적인 생물체이자 물체이다. 내 작업은 하늘의 빛을 향해서 뻗어나가는 나무를 육면체의 중심을 향하게 하고 그 중심에 사람이 서 있게 한다. 생존을 향한 자연의 움직임이 인간에게 향하게 하면서 나뭇가지에 찔릴 수 있는 섬뜩함을 느끼게 하는 것이다. 평범한 일상을 평범한 것(나무)이 해칠 수도 있음을 표현하고자 하였고 자연이 생존하기 위해 인류를 죽음에 이르게 할 수도 있다는 경고 또한 담겨져 있다."
+      },
+      "6": {
+        "x": 23,
+        "y": 2864,
+        "w": 344,
+        "h": 299,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 32,
+        "renderText": "The transmission of viruses from wild animals to humans began with the entrance of wild animals, which lost their natural habitats due to the development of civilization and urbanization and consequent destruction of the natural environment, into the realm of human life. Especially, Ebola, MERS, and COVID-19 are speculated to have come from bats. The COVID-19 pandemic can be seen as the resistance of the wilderness to the human desire to dominate the environment for the sake of our own prosperity. Based on this interpretation, I wanted to use architecture to express humans in acute conflict with nature for survival.\n​\n​문명의 발전과 개발에 따른 자연환경 파괴로 삶의 터전을 잃은 야생동물이 인간의 영역으로 들어오기 시작하면서 야생동물 바이러스가 인간에게 옮겨지게 되었다. 그중 에볼라 바이러스,  메르스(MERS)와 이번 코로나 바이러스는 박쥐에 의한 감염으로 최종 추정하고 있다. 이번 코로나 바이러스로 인한 팬데믹은 풍요로운 생존을 위해 지구 환경을 지배하고자 했던 인간의 욕구가 야생 환경의 생존 저항에 부딪힌 것이라 볼 수 있다. 이와 같은 해석을 바탕으로 인간과 자연의 생존이 충돌하고 있음을 건축적으로 표현하고자 하였다. "
+      },
+      "7": {
+        "x": 23,
+        "y": 3864,
+        "w": 344,
+        "h": 398,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 33,
+        "renderText": "Above all, I take trees, which are a symbol of the natural environment, and jam them into a hexahedral frame, a symbol of human space, to express the human desire to dominate the environment (trees). I positioned the trees inside the hexahedral frame so that they face the center: this is to show that they are moving (like living things moving toward the sun) to ensure their survival. With a human standing in the center, the hexahedral space could be viewed as a human-centered space. However, as the trees grow, they increasingly encroach upon the center of the space, leading them to possibly become a threat to human who may feel a bit afraid of getting pricked in the eye by a branch. This can be likened to the conflict between the tree's desire for survival and the human desire for domination, raising the question: Who owns the space?\n​\n먼저 자연환경의 주체를 나무로 삼고 인간의 공간을 상징하는 육면체 프레임에 나무를 욱여넣는다. 이것은 나무(지구 환경)를 지배하는 인간의 욕망을 표현한 것이다. 그다음 육면체 프레임 속의 나무를 육면체 중심으로 향하게 하여 생존을 위한 움직임(태양을 향한 성장의 움직임과 동일)을 보여준다. 그리고 그 움직임의 중심 즉 육면체 공간의 중심에 사람이 서 있을 수 있게 한다면 공간의 중심은 사람이라고 인식할 것이다. 그러나 공간의 중심에 선 사람의 입장에서는 설령 눈이라도 찔릴 수 있는 약간의 두려움을 느끼게 될 것이다. 이는 나무의 생존욕구와 인간의 지배 욕구가 충돌하는 경험이라 말할 수 있을 것이고 과연 공간(지구환경)의 주인은 누구(인간과 자연 중)인가 라는 메시지를 읽을 수 있을 것이다."
+      }
+    },
+    "imageMetrics": {
+      "a965e7_7c4c19eb19b343f7b332bb6e9eefe5dd~mv2.jpg": {
+        "x": 10,
+        "y": 475,
+        "w": 369,
+        "h": 569,
+        "gap": 0
+      },
+      "a965e7_92f2dfb9d9ad4ae68910a6eaf4aea16f~mv2.jpg": {
+        "x": 10,
+        "y": 1489,
+        "w": 369,
+        "h": 319,
+        "gap": 31
+      },
+      "a965e7_94651374a40c4a73bfdddbac212011a8~mv2.jpg": {
+        "x": 12,
+        "y": 1814,
+        "w": 365,
+        "h": 207,
+        "gap": 6
+      },
+      "a965e7_ae13a8e8b13b498c87b30c9e4f5f898a~mv2.jpg": {
+        "x": 17,
+        "y": 2635,
+        "w": 357,
+        "h": 197,
+        "gap": 283
+      },
+      "a965e7_e5040d62c5704bfd96cb12bf474f3774~mv2.jpg": {
+        "x": 16,
+        "y": 3194,
+        "w": 357,
+        "h": 637,
+        "gap": 31
+      },
+      "a965e7_d96509b0a994413bbe7397d6bccbf24d~mv2.png": {
+        "x": 10,
+        "y": 4294,
+        "w": 369,
+        "h": 572,
+        "gap": 32
+      }
+    }
   }
 }

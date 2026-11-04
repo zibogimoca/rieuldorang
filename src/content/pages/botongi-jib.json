@@ -195,6 +195,114 @@
       "a965e7_eb7094d784634cc1bd4c82201e1b6185~mv2.jpg": 2849
     },
     "heroWidth": 369,
-    "heroHeight": 272
+    "heroHeight": 272,
+    "heroY": 54,
+    "heroBodyHeight": 557,
+    "heroText": [
+      {
+        "x": 10,
+        "y": 337,
+        "w": 211,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 369,
+        "w": 366,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 16,
+        "y": 469,
+        "w": 353,
+        "h": 120,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "3": {
+        "x": 17,
+        "y": 860,
+        "w": 357,
+        "h": 315,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "It is 30 minutes away from Ulsan and there are many people who migrate to enjoy rural life these days. Most of the migrants here buy places that have developed mountains and fields for residential use. The commissioned place was one of these houses. Three houses of American type were already here. Placing different types of buildings where the same shapes are side by side creates an uncomfortable landscape in terms of locality and context. But when the inconvenient landscape makes the whole landscape, we get used to it.\n \n울산에서 30분거리에 있는 울주군 두동면 만화리라는 동네는 요즘 전원에서 살고자 이주하는 이들이 부쩍 많아진 곳이다. 이곳에 이주하는 이들 대부분은 산과 밭을 택지로 개발한 곳에 집을 짓는다. 의뢰받은 곳은 이런 택지 중의 하나였고 미국식 주택이 3채가 이미 들어서있었다. 똑같은 형태가 나란히 있는 곳에 다른 형태의 건물을 놓는 것은 지역성이니 맥락이니 하는 관점에서는 불편한 상황이 연출된다. 그러나 신도시와 같이 그 불편함이 대부분을 차지하고 나면 어느새 익숙해져버린 풍경에 놓이게 된다. 농지, 산지에 개발행위를 통해 집터를 만들어놓은 곳도 그와 다를 바 없다. 이런 모습이 현재라고 인정하고 나면 우린 어떤 생각으로 지어야하는지 고민이 아닐 수 없다."
+      },
+      "4": {
+        "x": 19,
+        "y": 1521,
+        "w": 352,
+        "h": 315,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "At one time in Korea, the book \"botong-ui jonjae\" (Normal Being) was a best seller. The beauty that is found in ordinary life is the theme. The emergence of this viewpoint is a natural phenomenon in Korea, which has achieved rapid growth in a short period of time. Through this book, the public reflects on the past that lived without the preciousness of mediocrity, and was comforted by the situation that it became harder to live than before.\nIn order to discover beauty from ordinary things, it is necessary to have a poetic sensibility to look back on ordinary things from a different point of view. I started designing with the question of how architecture can enter the world of emotion.\n​\n한때 보통의 존재라는 책이 인기를 끌었다. 평범한 삶에서 발견하는 아름다움이 주제다. 압축된 성장의 후유증을 앓고 있는 대한민국에서 이런 관점은 오히려 자연스러운게 아닐까싶다. 평범함의 소중함을 잃고 살았던 과거에 대한 반성이자 예전보다 살기 어려워진 현재를 위한 위로가 대중들의 공감을 불러일으켰다. 평범한 것에서 아름다움을 발견하기 위해선 평범함을 다른 관점으로 돌아 볼 수 있는 시적인 감성이 필요하다. 책은 읽기라는 행위를 통해서 감성의 세계로 들어갈 수 있다지만 건축은 어떻게 가능할 수 있을까라는 물음이 설계과정을 지배했다"
+      },
+      "5": {
+        "x": 14,
+        "y": 2139,
+        "w": 363,
+        "h": 448,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 46,
+        "renderText": "A paradox of normal form​\nThe project site is plain and the surrounding houses are in various forms. From a different point of view, there was the usual variety. I thought that the paradoxical way of reversing the existing grammar would be effective in feeling special emotions in ordinary scenery. Specifically, the general form is reversed. It is a way to empty the gable roof form in the form of a square box. In other words, it reverses the normal form and intends to ask what is normal.\nThe vacated space in the form of a gable becomes one of the sequences going into the house. And let it shine the sunshine indirectly. The vacated space in the form of gaps changes with time, and the feeling of space also changes. The vacated space of the normal form changes with time due to indirect sunlight and creates a point where ordinariness changes into specialty.\n \n보통의 역설\n집터는 평이하였고 주변 집들은 각양각색이었다. 어찌 보면 보통의 다양함이 있었다. 그 평범함을 특별한 감성으로 들여다보기 위해선 기존의 어법을 뒤집는 역설적 방법이 효과적일 것이라 생각했다. 구체적으로 집을 지을 때 가장 많이 사용하는 박공과 네모박스의 고유명사 같은 형태를 반대로 적용하는 것이다. 네모박스형태에서 일반적인 집의 형태인 박공지붕을 빼내어 비워진 집을 만들었다. 즉 보통의 형태를 반대로 뒤집는 표현으로 보통이란 무엇인가라는 질문을 의도한 것이다.\n기본적인 집의 기능은 남겨진 네모박스 안에서 이루어지게 하고 비워진 박공형태의 공간은 집으로 들어가는 시퀀스의 하나가 되게 하였다. 그리고 그곳에 볕뉘를 내렸다. 시간에 따라 변하는 볕뉘는 공간의 느낌도 변화시킨다. 박공의 비워진 공간은 볕뉘로 인해 시간에 맡겨진 공간으로 탈바꿈하여 평범함이 특별함으로 변화하는 지점을 만들어낸다."
+      },
+      "6": {
+        "x": 19,
+        "y": 3098,
+        "w": 352,
+        "h": 365,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "​The most important of the client's requirements was the space under the eaves. In the suburban housing, eaves play a very important role. A lot of things that you can not do in an apartment are possible under the eaves. It is a place where you can do various activities without being influenced by the weather. I was touched by her husband's affection for her family and wanted to present a special sensibility for her family. It was hoped that it would be a precious thing found in ordinary everyday life. Daily routines will repeat and the landscape of the village will always be the same. When these families got used to life here, they expect that they will occasionally receive special gifts that change over time in ordinary space.\n​\n클라이언트의 요구사항 중에서 가장 중요한 것은 처마아래 공간이었다. 교외 주택에서 처마는 아주 중요한 역할을 담당한다. 아파트에서 하지 못한 많은 일들이 처마아래에서 이루어진다. 그곳은 하늘에서 내려오는 것들에 방해받지 않고 바깥일상을 영위할 수 있는 유일한 곳이다. 초울트라 슈퍼파고라를 만들어 달라는 집주인의 요구도 있었지만 가족에 대한 애정이 남달랐던 남편의 마음에 울컥해 가족을 위한 특별한 감성을 선물하고 싶었다. 그것은 평범함에서 발견하는 소중한 그 무엇이길 바랐다. 일상은 반복되고 마을의 풍경은 늘 그대로지만 무엇인가 익숙해질 즈음 이 집에선 시간에 맡겨진 평범한 공간이 특별함으로 다가오는 선물을 가끔 받을 수 있을 거라 기대해본다."
+      }
+    },
+    "imageMetrics": {
+      "a965e7_0388ace9815246ce9d22db51aaa807b6~mv2.jpg": {
+        "x": 10,
+        "y": 611,
+        "w": 369,
+        "h": 207,
+        "gap": 0
+      },
+      "a965e7_b5314fb8dfba4a8ca7941097f6e321a8~mv2.jpg": {
+        "x": 10,
+        "y": 1229,
+        "w": 369,
+        "h": 250,
+        "gap": 54
+      },
+      "a965e7_66624fa35e384159af752d5952bfed6b~mv2.jpg": {
+        "x": 129,
+        "y": 1896,
+        "w": 131,
+        "h": 197,
+        "gap": 60
+      },
+      "a965e7_d5238e0b5dbb436b94f575c2cfc5a0df~mv2.jpg": {
+        "x": 107,
+        "y": 2632,
+        "w": 177,
+        "h": 202,
+        "gap": 45
+      },
+      "a965e7_eb7094d784634cc1bd4c82201e1b6185~mv2.jpg": {
+        "x": 10,
+        "y": 2849,
+        "w": 369,
+        "h": 207,
+        "gap": 15
+      }
+    },
+    "galleryGap": 71
   }
 }

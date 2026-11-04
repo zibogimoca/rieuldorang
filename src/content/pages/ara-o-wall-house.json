@@ -229,6 +229,100 @@
       "a965e7_c8384c2cc0464fb48d2561bf978bbd02~mv2.jpg": 2805
     },
     "heroWidth": 369,
-    "heroHeight": 226
+    "heroHeight": 226,
+    "heroY": 54,
+    "heroBodyHeight": 457,
+    "heroText": [
+      {
+        "x": 11,
+        "y": 290,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 11,
+        "y": 323,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 375,
+        "w": 353,
+        "h": 120,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "3": {
+        "x": 18,
+        "y": 751,
+        "w": 355,
+        "h": 846,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 33,
+        "renderText": "Breaking Away from the Superficial “Jeju-ness” Symbolized by Basalt\nWhen people think of Jeju, one of the first images that comes to mind is the dark, stone-like presence of dolharubang—basalt. Many homes built in Jeju naturally incorporate basalt in some way. However, the client strongly wished to move beyond this obvious, surface-level expression of local identity. They disliked the heavy and somber atmosphere created by the black material, as well as basalt’s high absorption rate, which often leads to moss growth. Ultimately, their desire was not a home defined by basalt, but one that could respond to Jeju’s harsh climate conditions.\nJeju’s warm, humid maritime climate makes an understanding of moisture and wind essential. First, because of the island’s strong winds, we designed a lowered courtyard and sunken exterior spaces to enable comfortable outdoor living. Second, we layered the garden and exterior ground with coarse, permeable red soil (masato) to minimize rising ground moisture. This also helps deter insects such as centipedes and reduces weed growth. Third, Jeju’s heavy rainfall required careful consideration of facade contamination. We prioritized exterior materials with near-zero water absorption, selecting economical porcelain tiles and installing them with a dry method to better resist staining.\nAdditionally, the courtyard brings in cooled air through the principle of evaporative heat loss. Air flows through a narrow gap formed between the underside of the second floor and the upper level of the basement garden, creating evaporative cooling. This cooled air rises into the courtyard and is then drawn naturally into the interior spaces connected to it, enhancing thermal comfort throughout the home.\n​\n현무암으로 상징되는 피상적 제주다움에서 탈피\n제주하면 떠오르는 것 중에 하나가 돌하르방의 검은 형태, 바로 현무암이다. 실제 제주에서 지어지고 있는 여러 주택들이 현무암과 관계를 가지고 있다. 그러나 건축주는 이를 탈피하고자 하는 마음이 간절했다. 현무암 자체적으로 흡수율이 높아서 이끼가 자주 발생하는데다가 검은 색의 재질이 전달해주는 무겁고 음침한 분위기를 싫어했다. 궁극적으로 현무암에 기댄 지역성이 아닌 혹독한 제주 기후 특성에 대응할 수 있는 주택에 대한 바람이 컸다.\n제주는 습하고 더운 동아시아의 해양성 기후이기에 습도와 바람에 대한 이해가 중요했다. 먼저 바람이 강한 탓에 지면보다 내려앉힌 마당과 중정을 두어 외부 생활에 지장이 없도록 하였다. 두 번째는 마당과 외부 정원에 투수성이 강한 굵은 마사토를 깔아 땅의 습기가 최소화될 수 있도록 하였다. 이는 지네나 각종 벌레가 서식하기 어렵게 하기 위함과 잡초 방지 차원이었다. 세 번째는 강수량이 많은 지역이란 점이다. 비로 인한 외장재의 오염에 대책이 필요했다. 주목한 것은 물을 흡수하지 않는 외장재의 선택이었다. 흡수율이 거의 제로에 가까우면서 경제적인 재료는 자기질타일이었고 이를 건식으로 시공하여 오염에 방어가 될 수 있는 외관을 구성했다.\n덧붙여 중정의 공간으로 기화열 원리로 인해 시원해진 바람을 들였다. 구체적으로 설명하자면 2층 아랫부분과 지하층 상부 사이의 좁은 높이의 외부 정원 사이로 바람이 들어오게 되는데 이는 기화열을 발생시킨다. 중정으로 들어온 기화열은 상부로 올라가게 되고 그로 인해 시원해진 바람은 중정과 연결된 내부공간으로 들어오게 된다."
+      },
+      "5": {
+        "x": 18,
+        "y": 1874,
+        "w": 354,
+        "h": 514,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 32,
+        "renderText": "A Privacy Wall Designed for Complete Seclusion\nFor the client, windows that required closing the curtains every day held little meaning. Yet relying solely on a courtyard for openings would have compromised natural ventilation. To resolve this, we wrapped the entirety of the second and third floors with a protective privacy wall, ensuring complete seclusion from the outside. This wall also blocks harsh, direct winds—an essential function in Jeju’s climate.\nBetween the privacy wall and the interior windows, space was left for trees and landscaping to rise upward. As the greenery grows, the lush foliage counterbalances the enclosed feeling of the wall and softens the architecture with natural light and movement. Externally, there is only a single triangular opening in the otherwise closed facade—framing a direct view of Hallasan, the spiritual heart of Jeju.\nOn the eastern side, where the bedrooms are located, the privacy wall shifts into a more porous aluminum louver system. Composed of two overlapping layers, the louvers create deeper visual control, preventing views into the interior while still allowing the soft light of the sunrise to filter through.\n​\n강력한 사생활 보호를 위한 가벽\n건축주에게 매일 커튼치고 살아야하는 창은 무의미했다. 그렇다고 중정으로만 창을 내기엔 통풍의 문제가 있었다. 그래서 가벽을 2층과 3층 전체에 둘러서 사생활 보호가 확실히 되도록 하였다. 또한 가벽은 직접적인 바람을 막아주는 역할도 하였다. 그리고 가벽과 내부 창호 사이에는 조경수가 솟아오를 수 있도록 하였는데 가벽으로 인한 답답함이 나뭇잎의 푸름으로 보완될 수 있음을 기대했다. 외부에서 보면 단 한 곳의 벽이 삼각형으로 열려있는데 이곳을 통해 제주의 정신이 담긴 한라산을 마주할 수 있다. 막혀진 가벽은 동쪽의 침실 쪽에서 알루미늄루버로 느슨하게 열린다. 알루미늄 루버는 두 겹으로 되었는데 보다 깊은 시각적 통제로 외부에서 내부가 잘 보이지 않게 하면서 일출의 빛이 스며들게 하였다."
+      },
+      "6": {
+        "x": 18,
+        "y": 2452,
+        "w": 354,
+        "h": 315,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 64,
+        "renderText": "Activity-Based Spatial Organization\nIn this house for three children of the same gender, spaces are organized around activities rather than assigned individually. Emphasizing shared experiences over personal ownership, each area’s character is defined by its intended use. The children sleep together in the bedroom and gather in the study, connected to the hallway desk, to read and work collaboratively. Anticipating the needs of adolescence, two small, attic-like spaces on the third floor offer private retreats. These spaces can serve as quiet study areas, creative workrooms, or personal hideaways when needed.\n​\n행위 단위의 공간\n이 집에는 동성의 세 자녀가 있어 개인별로 공간을 부여하기보다 행위 단위별로 영역을 나누는 방안을 제안하였다. 공간을 소유하는 관점이 아닌 공유한다는 관점에서 접근하였고 행위 단위로 영역의 성격이 정해지는 공간 구성을 계획하였다. 침실에서 같이 잠을 자고 복도 책상과 연결된 서재에서 함께 책을 읽는다. 반면에 사춘기가 올 것을 대비하여 3층에 다락방 느낌의 작은 공간을 두 개 마련했다. 개인적인 공간이 필요할 땐 사용할 수 있고 때로는 집중력이 요구되는 공부방이나 작업실의 용도로도 사용할 수 있도록 했다."
+      },
+      "7": {
+        "x": 13,
+        "y": 3035,
+        "w": 363,
+        "h": 348,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 32,
+        "renderText": "​Organic Spatial Composition\nThis house is composed of three courtyards at different levels, each interacting with the interior spaces to create a circulation pattern centered around a central courtyard. From the entrance, one can access the first-floor kitchen, the basement, or ascend to the second floor. As the entrance serves both the parking area and the main door, it occupies a key position in the circulation flow. From this point, most interior and exterior spaces are visually observable, meaning that anyone entering the house can be seen from nearly anywhere inside. The visually connected, multi-level spaces circulate around the courtyard, creating an organic link between interior and exterior areas as well as across floors.\n​\n유기적인 공간구성\n이 집은 레벨이 서로 다른 마당 세 개와 내부 공간이 각각 관계를 지으면서 중정을 중심으로 순환하는 구조의 공간 구성을 가졌다. 현관에서는 1층의 주방과 지하층을 진입할 수 있고 2층으로도 올라갈 수 있다. 또한 주차장과 현관문을 동시에 사용할 수 있는 공간이기에 동선의 요충지로서 현관은 중요한 위치를 가진다. 이 현관에서 집을 둘러보면 내외부 공간 대부분이 관찰되는데 누군가 집에 들어오면 내부의 어디서든 볼 수 있다는 의미다. 시각적으로 연결된 다양한 레벨의 공간은 중정을 중심으로 순환하면서 내외부를 비롯하여 층별로도 유기적으로 연결된다."
+      }
+    },
+    "imageMetrics": {
+      "a965e7_823b7b7855e846f78006dcc182bde070~mv2.jpg": {
+        "x": 10,
+        "y": 511,
+        "w": 369,
+        "h": 207,
+        "gap": 0
+      },
+      "a965e7_f0c301569bda430db94873daa7e0cebc~mv2.jpg": {
+        "x": 12,
+        "y": 1635,
+        "w": 365,
+        "h": 207,
+        "gap": 38
+      },
+      "a965e7_c8384c2cc0464fb48d2561bf978bbd02~mv2.jpg": {
+        "x": 10,
+        "y": 2805,
+        "w": 369,
+        "h": 198,
+        "gap": 38
+      }
+    },
+    "galleryGap": 121
   }
 }

@@ -134,6 +134,66 @@
       "a965e7_3de97cdd74794d7d99e847cb60754e20~mv2.jpg": 1537
     },
     "heroWidth": 369,
-    "heroHeight": 207
+    "heroHeight": 207,
+    "heroY": 54,
+    "heroBodyHeight": 427,
+    "heroText": [
+      {
+        "x": 12,
+        "y": 272,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 12,
+        "y": 305,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 379,
+        "w": 353,
+        "h": 80,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {},
+    "imageMetrics": {
+      "a965e7_c783de37814c4d848ecee89aaa11dad8~mv2.jpg": {
+        "x": 10,
+        "y": 481,
+        "w": 369,
+        "h": 207,
+        "gap": 0
+      },
+      "a965e7_048ef88eeb0b491e976630f66496f533~mv2.jpg": {
+        "x": 10,
+        "y": 908,
+        "w": 369,
+        "h": 207,
+        "gap": 220
+      },
+      "a965e7_9c5bc83f11454005b7bc81cd45ae61c8~mv2.jpg": {
+        "x": 10,
+        "y": 1323,
+        "w": 369,
+        "h": 207,
+        "gap": 208
+      },
+      "a965e7_3de97cdd74794d7d99e847cb60754e20~mv2.jpg": {
+        "x": 17,
+        "y": 1537,
+        "w": 357,
+        "h": 207,
+        "gap": 7
+      }
+    },
+    "galleryGap": 231
   }
 }

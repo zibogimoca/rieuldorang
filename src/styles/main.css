@@ -1481,3 +1481,23 @@ nav a,
   .intro-photo { transition: transform .6s ease; }
   .intro-image:hover .intro-photo { transform: scale(1.05); }
 }
+/* 원본 모바일 상세 페이지에서 측정한 제목·사진·문단 배치. */
+@media (max-width: 700px) {
+  .original-detail-hero[data-mobile-hero] { display: block; position: relative; height: var(--mobile-hero-body-height); }
+  .original-detail-hero[data-mobile-hero] > img { position: absolute; top: 0; left: 0; }
+  .original-detail-hero[data-mobile-hero] .original-detail-info,
+  .original-detail-hero[data-mobile-hero] .original-detail-name { display: contents; }
+  .original-detail-hero[data-mobile-hero] .original-mobile-hero-text { position: absolute; top: var(--mobile-top); left: var(--mobile-left); width: var(--mobile-width); margin: 0; padding: 0; font-size: var(--mobile-font); line-height: var(--mobile-line); }
+  .original-detail-hero[data-mobile-hero] .original-detail-name p:first-child { border: 0; }
+  .original-detail-hero[data-mobile-hero] .original-detail-name p:first-child::after { content: ''; position: absolute; top: 100%; left: 0; width: 100%; border-bottom: 1px solid #000; }
+  .original-detail-content[data-mobile-layout] { padding: 0; gap: 0; }
+  .original-detail-content[data-mobile-layout] .original-layout-item,
+  .original-detail-content[data-mobile-layout] .original-layout-hidden { width: var(--mobile-width, 100%); margin: var(--mobile-gap, 0) 0 0 var(--mobile-left, 0); }
+  .original-detail-content[data-mobile-layout] p.original-layout-item,
+  .original-detail-content[data-mobile-layout] p.original-layout-hidden { border: 0; padding: 0; font-size: var(--mobile-font, 13px); line-height: var(--mobile-line, 1.65); }
+  .original-detail-content[data-mobile-layout] img { height: auto; aspect-ratio: var(--mobile-ratio, auto); object-fit: cover; }
+  .original-gallery { margin-top: var(--mobile-gallery-gap, 80px); }
+  .original-gallery h2 { width: min(298px, 40%); margin: 0 auto 25px; padding: 0; font-size: 18.67px; line-height: 24px; }
+  .original-gallery-track { gap: 10px; }
+}
+@media (min-width: 701px) { .original-gallery h2 { width: min(298px, 40%); margin-inline: auto; } }

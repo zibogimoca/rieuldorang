@@ -164,6 +164,90 @@
       "a965e7_dbe88140465947b09fb2c4acbef1b289~mv2.jpg": 1796
     },
     "heroWidth": 369,
-    "heroHeight": 269
+    "heroHeight": 269,
+    "heroY": 54,
+    "heroBodyHeight": 551,
+    "heroText": [
+      {
+        "x": 10,
+        "y": 334,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 366,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 462,
+        "w": 353,
+        "h": 120,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "3": {
+        "x": 18,
+        "y": 854,
+        "w": 355,
+        "h": 282,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "Sea_Essay is a commercial building planned with a retail store on the first floor, a café on the second, and accommodations on the third. Designing a commercial building on a site facing the sea naturally begins with considering its relationship to the ocean. However, on a long and narrow 160-pyeong site, architecture based purely on a sense of place or spatial experience risked falling into a commercial dilemma. The solution was to compose abstract forms, combining associative stimulation with the spatial experience, allowing the building to be remembered through amplified emotional impact.\n​\n씨에세이는 1층 소매점, 2층은 카페, 3층은 스테이로 기획한 상업적 건물이다. 이런 상업적 건물을 바다와 접해있는 대지에 계획하는 것은 바다와 어떤 관계를 맺을 것인가로 시작하기 마련이다. 그러나 160평의 길고 좁은 대지에 장소성이나 공간감을 기반으로 한 건축은 상업적 딜레마에 빠질 우려가 있었다. 대안은 추상적 형태를 구성하여 그로 인한 연상적 자극과 공간의 경험이 합쳐져 보다 증폭된 감정으로 건물이 기억될 수 있도록 한 것이다. "
+      },
+      "4": {
+        "x": 18,
+        "y": 1439,
+        "w": 354,
+        "h": 315,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "The form of Sea_Essay acts as a portal that evokes associative imagery. It might suggest a rock split by waves or the shimmering reflections of moving water. The images or memories it conjures will vary according to each individual’s experiences. What is important, however, is that the stimulus for these associations is consistent for everyone, guiding their imagination toward elements related to the sea. The sculptural form of Sea_Essay becomes a medium that evokes the sea, connecting the ocean and the users through a powerful, memorable experience. The spatial imagery inside the building harmonizes with the external structure, deepening the relationship between the interior, the form, and the sea.\n \n씨에세이의 형태는 연상적 이미지를 불러일으키는 포털(portal)이다. 그것은 파도에 갈라진 바위일수도 있고 일렁이는 파도의 물그림자일 수도 있다. 개인의 경험적 기억에 따라 연상되는 이미지나 기억은 다양할 것이다. 중요한 것은 그 연상을 자극하는 것만은 누구에게나 동일하다는 것이며 그 연상의 방향을 바다와 관계된 것들로 이끌어가게 한 것이다. 씨에세이 조형은 바다와 관련된 것들을 연상해낼 수 있는 매개체가 되어 바다와 사용자와의 관계를 강렬한 기억으로 연결한다. 내부의 공간적 이미지도 외형의 구조체와 어우러져 바다와 깊은 관계를 맺는다. "
+      },
+      "5": {
+        "x": 18,
+        "y": 2265,
+        "w": 355,
+        "h": 199,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 262,
+        "renderText": "To achieve a high-quality exterior form that serves both structural and sculptural roles, interior carpenters were commissioned to craft the formwork instead of typical concrete carpenters, allowing the concrete structure to be seen at its finest. Sea_Essay was realized through a complex structural system combining steel frame, reinforced concrete, and steel-reinforced concrete, carefully calculated to harmonize form and function.\n \n구조체의 역할과 조형적 역할을 모두 수행하는 외관의 조형을 완성도 높게 만들기 위해 콘크리트 목수 대신 인테리어 목수가 거푸집을 제작하여 높은 품질의 콘크리트 구조체를 볼 수 있게 하였다. 씨에세이는 철골조와 철근콘크리트조, 철골철근콘크리트까지 복합적인 구조계산을 통해 구현되었다. "
+      }
+    },
+    "imageMetrics": {
+      "a965e7_04a8640abdd84c4699c8adbb2dd57940~mv2.jpg": {
+        "x": 10,
+        "y": 605,
+        "w": 369,
+        "h": 207,
+        "gap": 0
+      },
+      "a965e7_2907d944db9042aa87a4294928103785~mv2.jpg": {
+        "x": 10,
+        "y": 1190,
+        "w": 369,
+        "h": 207,
+        "gap": 54
+      },
+      "a965e7_dbe88140465947b09fb2c4acbef1b289~mv2.jpg": {
+        "x": 10,
+        "y": 1796,
+        "w": 369,
+        "h": 207,
+        "gap": 42
+      }
+    },
+    "galleryGap": 76
   }
 }

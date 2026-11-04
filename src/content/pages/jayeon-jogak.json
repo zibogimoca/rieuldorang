@@ -187,6 +187,97 @@
       "a965e7_e34fcdb8e9fc4fe88d9f808155b62bbe~mv2.jpg": 2242
     },
     "heroWidth": 369,
-    "heroHeight": 207
+    "heroHeight": 207,
+    "heroY": 54,
+    "heroBodyHeight": 427,
+    "heroText": [
+      {
+        "x": 10,
+        "y": 272,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 305,
+        "w": 364,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 359,
+        "w": 353,
+        "h": 100,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "5": {
+        "x": 15,
+        "y": 731,
+        "w": 360,
+        "h": 282,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 43,
+        "renderText": "This project involves designing a mixed-use residential building on a clean, rectangular 100-pyeong site located within a standard district-unit planning area.\nOne notable characteristic of the site is the presence of a stream to the south, accompanied by a road park along its edge. Though modest in scale, the opportunity to connect with the greenery of nature is a rare advantage for a residential plot.\nBecause the house looks out over the stream, we drew inspiration from the idea of a traditional pavilion and explored how the building could form a meaningful relationship with the surrounding natural landscape.\n​\n일반 지구단위계획 구역의 주택지로서 반듯한 100평의 대지에 상가주택을 계획하는 것이다. 대지가 갖고 있는 특성은 남측으로 하천과 그 주변에 도로공원이 있다는 점이다. 작지만 자연의 푸름과 관계를 맺을 수 있다는 것은 집을 짓는 대지로서는 큰 행운이었다. 개천을 내려다보는 집이란 점에서 누각을 떠올리고 자연과 관계를 맺을수 있다는 가능성을 염두했다. "
+      },
+      "8": {
+        "x": 14,
+        "y": 1316,
+        "w": 361,
+        "h": 249,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "On the third and fourth floors—where the owner will reside—we placed only the public areas, such as the living room and kitchen, on the third floor and dedicated the remaining space entirely to landscaping. To create a stronger sense of being surrounded by nature, the third-floor exterior wall was designed as a full-height glass façade, allowing the outdoors to be experienced more closely. In addition, to achieve a more open spatial composition, the kitchen furniture and the living room wall were designed to function like sculptural objects within the space.\n​\n건축주가 거주할 3층과 4층 공간에서 공적인 영역인 거실과 주방만을 3층에 배치하고 남은 부분에 전체 조경을 구성하였다. 그리고 보다 더 자연 속에 둘러싸인 분위기를 위해 3층 외벽을 통 창으로 계획하여 자연을 더 가까이 경험할 수 있는 공간이 되게 하였다. 또한 보다 개방적인 3층 공간구성을 위해 주방가구와 거실 벽체를 오브제처럼 보이게끔 디자인 하였다. "
+      },
+      "11": {
+        "x": 14,
+        "y": 1868,
+        "w": 361,
+        "h": 332,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "Because the entire third floor was designed with open glazing, privacy became an issue. To resolve this, we applied aluminum louvers that cover the two primary facades, allowing them to function as blinds that provide appropriate visual screening. By utilizing the characteristics of aluminum louvers, we simplified the overall exterior and created harmony with the structural forms that hint at the natural lines of rock edges and tree branches, establishing a relationship with nature.\nWe expect that these forms—suggesting the traces of nature—and the experience of living within such a natural environment will resonate with one another, creating a deeper and more amplified sense of place.\n​\n3층 전체를 오픈된 창호로 구성했기 때문에 사생활 보호가 되지 않는 문제가 있었다. 그래서 두 개 입면 전체를 덮는 알루미늄 루버를 적용하여 적절한 시야차단의 블라인드 역할이 되도록 하였다. 알루미늄 루버의 특징을 활용하여 외관 전체를 단순화하였고 바위 모서리, 나뭇가지 등의 자연의 선을 암시할 수 있는 구조체 형태와 조화가 이루게 하여 자연과 관계를 가지도록 하였다. \n이러한 자연과 선을 암시할 수 있는 형태와 자연 속 거주 경험은 서로 공명하여 보다 증폭된 감흥을 가지게 할 것이라 기대한다."
+      }
+    },
+    "imageMetrics": {
+      "a965e7_9e89e514bc24498983fc5fa2a4bae91d~mv2.jpg": {
+        "x": 10,
+        "y": 481,
+        "w": 369,
+        "h": 207,
+        "gap": 0
+      },
+      "a965e7_5a740c8a0aa0442fb3d733fd83642396~mv2.jpg": {
+        "x": 10,
+        "y": 1067,
+        "w": 369,
+        "h": 207,
+        "gap": 54
+      },
+      "a965e7_0e6bd2c148bd41d1ae467ad0b0499755~mv2.jpg": {
+        "x": 10,
+        "y": 1619,
+        "w": 369,
+        "h": 207,
+        "gap": 54
+      },
+      "a965e7_e34fcdb8e9fc4fe88d9f808155b62bbe~mv2.jpg": {
+        "x": 10,
+        "y": 2242,
+        "w": 369,
+        "h": 207,
+        "gap": 42
+      }
+    },
+    "galleryGap": 29
   }
 }

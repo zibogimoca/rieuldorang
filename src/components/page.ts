@@ -21,6 +21,12 @@ type OriginalPage = {
     images: Record<string, number>;
     heroWidth?: number;
     heroHeight?: number;
+    heroY?: number;
+    heroBodyHeight?: number;
+    heroText?: OriginalPosition[];
+    textMetrics?: Record<string, OriginalPosition & { gap: number }>;
+    imageMetrics?: Record<string, OriginalPosition & { gap: number }>;
+    galleryGap?: number;
   };
   desktopLayout?: {
     baseY: number;
@@ -177,7 +183,25 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
     main.append(awards);
     return main;
   }
+  const mobile = data.mobileLayout;
+  const applyMobileMetrics = (node: HTMLElement, position?: OriginalPosition & { gap?: number }, heroText = false) => {
+    if (!mobile || !position) return;
+    node.style.setProperty("--mobile-left", `${((position.x - 10) / 370) * 100}%`);
+    node.style.setProperty("--mobile-width", `${(position.w / 370) * 100}%`);
+    node.style.setProperty("--mobile-ratio", `${position.w} / ${position.h}`);
+    if (position.fontSize) node.style.setProperty("--mobile-font", `${position.fontSize / 3.9}vw`);
+    if (position.lineHeight) node.style.setProperty("--mobile-line", `${position.lineHeight / 3.9}vw`);
+    if (position.gap !== undefined) node.style.setProperty("--mobile-gap", `${position.gap / 3.9}vw`);
+    if (heroText && mobile.heroY !== undefined) {
+      node.classList.add("original-mobile-hero-text");
+      node.style.setProperty("--mobile-top", `${(position.y - mobile.heroY) / 3.9}vw`);
+    }
+  };
   const hero = element("section", "original-detail-hero");
+  if (mobile?.heroBodyHeight) {
+    hero.dataset.mobileHero = "true";
+    hero.style.setProperty("--mobile-hero-body-height", `${mobile.heroBodyHeight / 3.9}vw`);
+  }
   if (data.images[0]) {
     const heroImage = imageFor(data.images[0]);
     if (data.desktopLayout)
@@ -194,9 +218,17 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   }
   const info = element("div", "original-detail-info");
   const name = element("div", "original-detail-name");
-  data.text.slice(0, 2).forEach((text) => name.append(textBlock(text)));
+  data.text.slice(0, 2).forEach((text, index) => {
+    const block = textBlock(text);
+    applyMobileMetrics(block, mobile?.heroText?.[index], true);
+    name.append(block);
+  });
   info.append(name);
-  if (data.text[2]) info.append(textBlock(data.text[2]));
+  if (data.text[2]) {
+    const block = textBlock(data.text[2]);
+    applyMobileMetrics(block, mobile?.heroText?.[2], true);
+    info.append(block);
+  }
   hero.append(info);
   main.append(hero);
   const content = element("section", "original-detail-content");
@@ -262,6 +294,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
       renderedText.add(signature);
       const block = textBlock(position?.renderText ?? text);
       block.dataset.originalTextIndex = String(offset + 3);
+      applyMobileMetrics(block, mobile?.textMetrics?.[String(offset + 3)]);
       if (data.mobileLayout) {
         if (mobilePosition === undefined)
           block.classList.add("original-mobile-hidden");
@@ -278,6 +311,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   inlineImages.forEach((item) => {
     const image = imageFor(item);
     image.dataset.originalImage = item.source;
+    applyMobileMetrics(image, mobile?.imageMetrics?.[item.source]);
     if (data.mobileLayout) {
       const order = data.mobileLayout.images[item.source];
       if (order === undefined) image.classList.add("original-mobile-hidden");
@@ -290,6 +324,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   main.append(content);
   if (galleryImages.length) {
     const gallery = element("section", "original-gallery");
+    if (mobile?.galleryGap !== undefined) gallery.style.setProperty("--mobile-gallery-gap", `${mobile.galleryGap / 3.9}vw`);
     gallery.append(element("h2", "", "Project Gallery"));
     const track = element("div", "original-gallery-track");
     galleryImages.forEach((item, index) => {

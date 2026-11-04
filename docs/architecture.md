@@ -23,7 +23,10 @@ src/
   styles/main.css         반응형 스타일
   styles/motion.css       모션과 언어 버튼 스타일
 public/images/
-  logo.png                사이트 로고 및 파비콘 (기존 사이트)
+  logo.png                원본 사이트 상단 로고
+  favicon-32.png          원본 브라우저 탭 아이콘
+  favicon-192.png         원본 고해상도 아이콘
+  apple-touch-icon.png    원본 iOS 홈 화면 아이콘
   buildings/              건물별 사진
   intro/                  원본 인트로 슬라이더 사진
   about/                  소개용 이미지

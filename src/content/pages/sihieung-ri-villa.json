@@ -173,6 +173,97 @@
       "a965e7_ceb5e00dc68e429f86eb764c3cee0a0c~mv2.jpg": 2691
     },
     "heroWidth": 369,
-    "heroHeight": 207
+    "heroHeight": 207,
+    "heroY": 54,
+    "heroBodyHeight": 427,
+    "heroText": [
+      {
+        "x": 10,
+        "y": 272,
+        "w": 211,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 305,
+        "w": 211,
+        "h": 30,
+        "fontSize": 22.819,
+        "lineHeight": 29.665
+      },
+      {
+        "x": 10,
+        "y": 379,
+        "w": 353,
+        "h": 80,
+        "fontSize": 12.447,
+        "lineHeight": 19.915
+      }
+    ],
+    "textMetrics": {
+      "3": {
+        "x": 14,
+        "y": 832,
+        "w": 363,
+        "h": 647,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 42,
+        "renderText": "The Siheung-ri Villa is one of those low-budget projects that young architects often encounter.\nThe site was already registered as a small-scale villa built with lightweight steel framing and sandwich panels, but the client was determined to build well despite a limited budget.\nThe plot carries over 100 years of family history, established by the client’s grandfather. The current owner was born and raised on this land. Traditional foundation stones and stepping stones from the original house remain preserved on the site, and a camellia tree over 100 years old watches over the land.\nThe program for the villa was modest: one bedroom, a living room with kitchen, and a bathroom, while preserving the original foundation and stepping stones, and creating a space in harmony with the camellia tree.\nThe site itself is irregular, almost star-shaped, and faces a 2-meter-high stone wall and an unsightly shed to the south. Building a roughly 10-pyeong (≈33 m²) house on a 100-pyeong (≈330 m²) lot presented the risk that the house might feel isolated on an uncomfortable site. We wanted to revive the historically significant site, enjoy the presence of the 110-year-old camellia tree, and feel the passage of time embedded in the foundation and stepping stones.\n \n시흥리 주택은 젊은 건축가가 으레 마주하게 되는 저예산 프로젝트 중의 하나다.\n이미 기존에 샌드위치 패널의 경량철골조로 건축신고가 된 소규모 별장인데 건축주는 저예산이지만 잘 짓고 싶은 마음이 간절했다.\n​\n대지는 건축주의 할아버지가 터를 잡은 지 100년이 넘은 집안의 역사를 간직한 장소였다.\n현 건축주는 이 터에서 태어나 어린 시절을 보냈다고 한다. 대지에는 예전의 전통가옥 주춧돌과 디딤돌이 그대로 보존되어 있고 수령이 100년이 넘은 동백나무가 이 터를 지키고 있었다. 별장의 계획 조건은 방1개와 거실 및 주방, 화장실 정도이고 예전 가옥의 주춧돌과 디딤돌을 보존하고 동백나무와 어울릴 수 있는 공간을 만드는 것이다.\n​\n현 대지는 별모양 같은 비정형인데다가 남쪽으로 2미터정도의 석축과 흉물스런 창고를 마주하고 있다. 이런 약 100평의 대지에 10평대의 집을 짓는다는 것은 쾌적하지 못한 대지에 집이 홀로 외로이 서 있을 가능성이 농후했다. 우리는 역사적인 장소성을 가진 대지를 아낌없이 재생하고 수령 110년의 동백나무와 즐겁게 마주하면서 디딤돌과 주춧돌에 새겨진 세월의 흐름을 느끼고 싶었다."
+      },
+      "4": {
+        "x": 14,
+        "y": 1761,
+        "w": 363,
+        "h": 299,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 21,
+        "renderText": "We divided the site into a modular grid of equal-sized units, aiming for each subdivided lot to be recognized both as a part of the whole and as an independent presence.\nEach of these subdivided plots carries fragments of the site’s historical memories while also accumulating new memories from contemporary experiences. Although it is a private villa, the client envisioned it as a space potentially usable by multiple people, allowing the site’s layered history and present-day life to overlap. This approach gives each visitor a unique sense of place, shaped by their own experience.\n \n그래서 대지를 동일 크기의 모듈 격자로 나누고, 나누어진 각각의 대지들이 전체의 부분임과 동시에 각각의 존재를 인정받는 대상으로 만들고자 하였다.\n​\n이렇게 나눠진 각각의 대지들은 장소가 가진 여러 가지 기억들을 나눠가지면서 새로이 일어나는 여러 상황들의 새로운 기억들을 적층할 것이다. 개인 별장이지만 불특정 다수가 사용가능하다는 건축주의 의견에 따라서 대지의 장소성은 과거의 기억과 현재의 일상들이 겹쳐지면서 사람마다 다른 장소성을 가질 수 있다고 생각하였다.​"
+      },
+      "5": {
+        "x": 14,
+        "y": 2322,
+        "w": 363,
+        "h": 348,
+        "fontSize": 10.372,
+        "lineHeight": 16.596,
+        "gap": 22,
+        "renderText": "We discovered the potential for the site’s identity to be rebooted and conducted an experiment using the simplest and most cost-effective method: a 3-meter modular grid. Through this approach, we anticipated that traces of past memories and new experiences would intersect, allowing the history embedded in the site to be rewritten.\nReboot refers to abandoning the continuity of a series and starting anew from the beginning.\nIn this context, since the original house had already disappeared, the term signifies abandoning the possibility of restoration and instead redefining the relationship between the site’s historical memory and the newly constructed house.\n \n우리는 여기서 장소성이 리부트* 될 수 있다는 가능성을 발견하고 가장 단순하고 저렴한 방법인 3미터 모듈의 격자로 실험을 진행하였다. 그리고 이를 통해 흔적의 기억과 새로운 기억들이 만나면서 장소가 가진 역사가 새로이 쓰이게 될 거라 기대하였다.\n \n*리부트(Reboot)는 시리즈의 연속성을 버리고 새롭게 처음부터 하는 것을 의미한다.\n여기서는 이미 기존의 집이 사라진 상태라 복원의 가능성을 버리고 장소가 가진 기억과 다시 지어지는 집의 관계를 새로이 정의한다는 의미로 사용하였다."
+      }
+    },
+    "imageMetrics": {
+      "a965e7_e796b2d582d3490fbf3ff6d55ec28d8f~mv2.jpg": {
+        "x": 10,
+        "y": 481,
+        "w": 369,
+        "h": 309,
+        "gap": 0
+      },
+      "a965e7_5af75f23f1d94220b37d5c02139ec7a4~mv2.jpg": {
+        "x": 10,
+        "y": 1533,
+        "w": 369,
+        "h": 207,
+        "gap": 54
+      },
+      "a965e7_37b945a940b54f3f98179e23303e6662~mv2.jpg": {
+        "x": 10,
+        "y": 2093,
+        "w": 369,
+        "h": 207,
+        "gap": 33
+      },
+      "a965e7_ceb5e00dc68e429f86eb764c3cee0a0c~mv2.jpg": {
+        "x": 10,
+        "y": 2691,
+        "w": 369,
+        "h": 207,
+        "gap": 21
+      }
+    },
+    "galleryGap": 34
   }
 }

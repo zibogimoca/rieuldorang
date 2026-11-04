@@ -46,6 +46,7 @@
 - 아라오월 주택: `a965e7_5227967650974906a2dd8c4a88131c57~mv2.jpg`
 - OAD 호텔: `a965e7_5f8c884273834554aaecaaa2b0136cf6~mv2.jpg`
 - 로고: `a965e7_d29bb0698b3f40eebcea3c6fd55d5e51~mv2.png`
+- 파비콘 및 Apple 아이콘: `a965e7_66c6925dedc94cbd8602d60a4f4fd8b0~mv2.png`
 - 공간의 주인은 누구인가?: `a965e7_92f2dfb9d9ad4ae68910a6eaf4aea16f~mv2.jpg`
 - 아페드셀: `a965e7_15296a0fa5494e69820dc8d8fcff0bbc~mv2.jpg`
 - 도랑드빌레: `a965e7_15ec05856f154281b97dfc26234d57a7~mv2.jpg`
