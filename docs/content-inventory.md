@@ -15,15 +15,15 @@
 
 ## 프로젝트 원본 순서
 
-| 순서 | 제목                    | 원본 경로           | 현재 시안      |
-| ---- | ----------------------- | ------------------- | -------------- |
-| 1    | 아라오월 주택           | /ara-o-wall-house   | 표시           |
-| 2    | OAD 호텔                | /oad-hotel          | 표시           |
-| 3    | 공간의 주인은 누구인가? | /who-owns-the-space | 표시           |
-| 4    | 아페드셀                | /aphae-de-sel       | 표시           |
-| 5    | 도랑드빌레              | /dorang-de-ville    | 표시           |
-| 6    | 매미성 카페             | /maemisong          | 표시           |
-| 7    | 씨에세이                | /sea-essay          | 표시           |
+| 순서 | 제목                    | 원본 경로           | 현재 시안 |
+| ---- | ----------------------- | ------------------- | --------- |
+| 1    | 아라오월 주택           | /ara-o-wall-house   | 표시      |
+| 2    | OAD 호텔                | /oad-hotel          | 표시      |
+| 3    | 공간의 주인은 누구인가? | /who-owns-the-space | 표시      |
+| 4    | 아페드셀                | /aphae-de-sel       | 표시      |
+| 5    | 도랑드빌레              | /dorang-de-ville    | 표시      |
+| 6    | 매미성 카페             | /maemisong          | 표시      |
+| 7    | 씨에세이                | /sea-essay          | 표시      |
 
 ## 뉴스 원본 순서
 
@@ -45,6 +45,12 @@
 
 - 아라오월 주택: `a965e7_5227967650974906a2dd8c4a88131c57~mv2.jpg`
 - OAD 호텔: `a965e7_5f8c884273834554aaecaaa2b0136cf6~mv2.jpg`
+- 로고: `a965e7_d29bb0698b3f40eebcea3c6fd55d5e51~mv2.png`
+- 공간의 주인은 누구인가?: `a965e7_92f2dfb9d9ad4ae68910a6eaf4aea16f~mv2.jpg`
+- 아페드셀: `a965e7_15296a0fa5494e69820dc8d8fcff0bbc~mv2.jpg`
+- 도랑드빌레: `a965e7_15ec05856f154281b97dfc26234d57a7~mv2.jpg`
+- 매미성 카페: `a965e7_dbe3c5497ff44033ae33e207e8262176~mv2.png`
+- 씨에세이: `a965e7_dbe88140465947b09fb2c4acbef1b289~mv2.jpg`
 - 대표 소개: `a965e7_0690b07580774edb935fa5ff99e24f3e~mv2.jpg`
 - 뉴스: `d64a16_f4a8675cca7b417d8e5e03ca3ab1eb04~mv2.png`
 

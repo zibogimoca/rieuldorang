@@ -17,8 +17,10 @@ src/
   styles/main.css         반응형 스타일
   styles/motion.css       모션과 언어 버튼 스타일
 public/images/
+  logo.png                사이트 로고 및 파비콘 (기존 사이트)
   buildings/              건물별 사진
-  about/                  소개용 이미지 보관 위치
+  about/                  소개용 이미지
+  news/                   뉴스 이미지
 docs/                     구조·규칙·운영·작성 안내
 ```
 

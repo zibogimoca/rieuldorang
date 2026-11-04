@@ -28,8 +28,16 @@ function render(): void {
   const skip = element("a", "skip-link", t.skip);
   skip.href = "#main";
   const header = element("header", "site-header");
-  const logo = element("a", "logo", site.name);
+  const logo = element("a", "logo");
   logo.href = "#";
+  logo.setAttribute(
+    "aria-label",
+    `${site.name} — ${locale === "ko" ? "홈" : "Home"}`,
+  );
+  const logoImage = element("img", "logo-image");
+  logoImage.src = `${import.meta.env.BASE_URL}images/logo.png`;
+  logoImage.alt = "";
+  logo.append(logoImage);
   const nav = element("nav");
   nav.setAttribute("aria-label", t.menu);
   for (const [text, href] of [
@@ -72,18 +80,24 @@ function render(): void {
   const title = element("h1", "visually-hidden", site.headline.join(" · "));
   const heroGallery = element("div", "hero-gallery");
   const introProjects = ["ara-o-wall-house", "aphae-de-sel", "maemisong"];
-  introProjects.map((id) => buildings.find((building) => building.id === id)).forEach((building, index) => {
-    if (!building) return;
-    if (!building.image) return;
-    const card = element("a", "hero-panel");
-    card.href = building.href ?? "#spaces";
-    card.setAttribute("aria-label", `${site.headline[index]} — ${t.projectNames[building.id] ?? building.name}`);
-    const image = element("img");
-    image.src = import.meta.env.BASE_URL + building.image.src.replace(/^\//, "");
-    image.alt = "";
-    card.append(image, element("span", "hero-caption", site.headline[index]));
-    heroGallery.append(card);
-  });
+  introProjects
+    .map((id) => buildings.find((building) => building.id === id))
+    .forEach((building, index) => {
+      if (!building) return;
+      if (!building.image) return;
+      const card = element("a", "hero-panel");
+      card.href = building.href ?? "#spaces";
+      card.setAttribute(
+        "aria-label",
+        `${site.headline[index]} — ${t.projectNames[building.id] ?? building.name}`,
+      );
+      const image = element("img");
+      image.src =
+        import.meta.env.BASE_URL + building.image.src.replace(/^\//, "");
+      image.alt = "";
+      card.append(image, element("span", "hero-caption", site.headline[index]));
+      heroGallery.append(card);
+    });
   hero.append(title, heroGallery);
   const notice = element("p", "notice", t.notice);
   const spaces = element("section", "section");
@@ -131,7 +145,7 @@ function render(): void {
   for (const item of introductions) {
     if (item.image) {
       const image = element("img", "portrait");
-      image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, '');
+      image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
       image.alt =
         locale === "ko"
           ? item.image.alt
@@ -168,7 +182,7 @@ function render(): void {
     const link = element("a", "news-item");
     link.href = item.href;
     const image = element("img");
-    image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, '');
+    image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
     image.alt =
       locale === "ko"
         ? item.image.alt
