@@ -24,6 +24,7 @@ export const translations = {
     projectNames: {
       "ara-o-wall-house": "아라오월 주택",
       "oad-hotel": "OAD 호텔",
+      "who-owns-the-space": "공간의 주인은 누구인가?", "aphae-de-sel": "아페드셀", "dorang-de-ville": "도랑드빌레", "maemisong": "매미성 카페", "sea-essay": "씨에세이",
     } as Record<string, string>,
     newsNames: { "architecture-of-survival": "생존의 건축" } as Record<
       string,
@@ -52,6 +53,7 @@ export const translations = {
     projectNames: {
       "ara-o-wall-house": "Ara O Wall House",
       "oad-hotel": "OAD Hotel",
+      "who-owns-the-space": "Who Owns the Space?", "aphae-de-sel": "Aphae de Sel", "dorang-de-ville": "Dorang de Ville", "maemisong": "Maemiseong Cafe", "sea-essay": "Sea Essay",
     } as Record<string, string>,
     newsNames: {
       "architecture-of-survival": "The Architecture of Survival",

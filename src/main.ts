@@ -69,10 +69,22 @@ function render(): void {
   main.id = "main";
   // 원본 순서: 메인 문구 → 최근 프로젝트 → 대표 소개 → 뉴스.
   const hero = element("section", "hero");
-  hero.append(element("p", "eyebrow", t.eyebrow));
-  const title = element("h1");
-  site.headline.forEach((line) => title.append(element("span", "", line)));
-  hero.append(title, element("p", "hero-description", t.description));
+  const title = element("h1", "visually-hidden", site.headline.join(" · "));
+  const heroGallery = element("div", "hero-gallery");
+  const introProjects = ["ara-o-wall-house", "aphae-de-sel", "maemisong"];
+  introProjects.map((id) => buildings.find((building) => building.id === id)).forEach((building, index) => {
+    if (!building) return;
+    if (!building.image) return;
+    const card = element("a", "hero-panel");
+    card.href = building.href ?? "#spaces";
+    card.setAttribute("aria-label", `${site.headline[index]} — ${t.projectNames[building.id] ?? building.name}`);
+    const image = element("img");
+    image.src = import.meta.env.BASE_URL + building.image.src.replace(/^\//, "");
+    image.alt = "";
+    card.append(image, element("span", "hero-caption", site.headline[index]));
+    heroGallery.append(card);
+  });
+  hero.append(title, heroGallery);
   const notice = element("p", "notice", t.notice);
   const spaces = element("section", "section");
   spaces.id = "spaces";
