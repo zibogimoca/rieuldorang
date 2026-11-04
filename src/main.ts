@@ -78,7 +78,6 @@ function render(): void {
   main.id = "main";
   // 원본 순서: 메인 문구 → 최근 프로젝트 → 대표 소개 → 뉴스.
   const hero = createIntro(locale);
-  const notice = element("p", "notice", t.notice);
   const spaces = element("section", "section");
   spaces.id = "spaces";
   const heading = element("div", "section-heading");
@@ -173,7 +172,7 @@ function render(): void {
     link.append(content, element("span", "", `${t.more} ↗`));
     journal.append(link);
   }
-  main.append(hero, notice, spaces, about, journal);
+  main.append(hero, spaces, about, journal);
   const footer = element("footer", "site-footer");
   footer.append(
     element("strong", "logo", site.name),
