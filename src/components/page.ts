@@ -134,11 +134,32 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
       [34, 35, 36, 12],
       [37, 38, 39, 13],
     ];
+    const links: Record<number, string> = {
+      9: "https://vmspace.com/project/project_view.html?base_seq=MzkzOA%3D%3D",
+      1: pageUrl("stay-collection"),
+      4: "https://youtu.be/hX-jwYajo28",
+      7: "http://www.archinews.net/건축/작품소개/sea-essay",
+      12: "https://www.archdaily.com/tag/top100/",
+      17: "https://www.c3ka.com/marea-pool-villa-by-rieuldorang-architect-office/",
+      20: "http://www.archinews.net/건축/작품소개/자연조각",
+      23: "https://blog.naver.com/greenhouse4u/221363490184",
+      25: "https://www.archdaily.com/972357/marea-house-rieuldorang-atelier?ad_source=search&ad_medium=projects_tab",
+      28: "https://magazine.brique.co/project/청도-바오마루/",
+      31: "https://www.youtube.com/watch?v=iSMVzu_HrFs",
+      34: "https://magazine.brique.co/project/서동-팔콘-주택/",
+    };
     for (const [title, date, description, image] of groups) {
       const row = element("article", "original-news-row");
-      if (data.images[image]) row.append(imageFor(data.images[image]));
+      const url = links[title];
+      if (data.images[image]) {
+        const photo = imageFor(data.images[image]);
+        if (url) { const link = element("a"); link.href = url; link.setAttribute("aria-label", data.text[title]); link.append(photo); row.append(link); }
+        else row.append(photo);
+      }
       const copy = element("div", "original-news-copy");
-      copy.append(element("h2", "", data.text[title]));
+      const heading = element("h2", "", data.text[title]);
+      if (url) { const link = element("a"); link.href = url; link.append(heading); copy.append(link); }
+      else copy.append(heading);
       if (date !== null)
         copy.append(element("p", "original-news-date", data.text[date]));
       copy.append(textBlock(data.text[description]));
