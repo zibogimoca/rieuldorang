@@ -220,3 +220,34 @@
     transition-delay: 0ms;
   }
 }
+/* 원본 홈·뉴스 제목의 글자별 회전. */
+.title-flip-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.title-flip-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.title-flip-cell {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.title-flip-cell > span {
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0.5lh);
+}
+.title-flip-cell > span + span {
+  position: absolute;
+  inset: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transform: rotateX(-90deg) translateZ(0.5lh);
+}

@@ -74,7 +74,10 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
     const top = element("section", "original-about-top");
     if (data.images[0]) top.append(imageFor(data.images[0]));
     const bio = element("div", "original-bio");
-    data.text.slice(0, 3).forEach((text) => bio.append(textBlock(text)));
+    const bioHeading = element("div", "original-bio-heading");
+    data.text.slice(0, 2).forEach((text) => bioHeading.append(textBlock(text)));
+    bio.append(bioHeading);
+    if (data.text[2]) bio.append(textBlock(data.text[2]));
     top.append(bio);
     main.append(top);
     data.text.slice(3).forEach((text) => main.append(textBlock(text)));

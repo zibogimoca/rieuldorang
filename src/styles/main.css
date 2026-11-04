@@ -1466,3 +1466,11 @@ nav a,
     line-height: var(--original-line-height, 1.6);
   }
 }
+@media (min-width: 701px) {
+  .original-about-top { grid-template-columns: 56.6% 1fr; gap: 8.75%; }
+  .original-news { margin-top: 8px; }
+  .original-news > h1 { font-size: 28px; font-weight: 400; line-height: 1.2; margin: 0 0 40px; }
+}
+.original-bio-heading .original-text { font-size: 18px; margin: 0 0 6px; }
+.original-news-copy h2 { font-weight: 400; }
+.original-contact .original-text { width: min(904px, 100%); padding: 40px; border: 1px solid #000; border-radius: 24px; text-align: center; line-height: 1.45; }

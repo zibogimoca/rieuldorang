@@ -7,6 +7,7 @@ src/
     intro.ts              원본 인트로 슬라이더
     motion.ts             스크롤 등장 효과
     header-dock.ts        원본 헤더 확대 효과
+    title-flip.ts         원본 제목 글자 회전 효과
     footer.ts             공통 하단 메뉴
     page.ts               원본 페이지 화면
     dom.ts                안전한 DOM 생성
