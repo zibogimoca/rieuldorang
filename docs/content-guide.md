@@ -72,5 +72,5 @@
 
 1. `src/content/pages/`에 영문 경로를 파일명으로 하는 JSON을 추가합니다. `text` 배열은 원본 순서대로 한글 제목, 영문 제목, 건물 정보, 본문을 넣습니다. `images` 배열에는 `file`(이미지 폴더 내부 경로), `alt`(대체 텍스트), `source`(원본 파일 식별자)를 기록합니다. 기존 JSON을 참고하세요.
 2. 사진을 `public/images/pages/건물-경로/`에 보관하고 JSON의 `file`에 `건물-경로/01.jpg`처럼 적습니다. `file`은 실제 파일과 대소문자까지 같아야 합니다.
-3. 프로젝트 목록에서 보이도록 `src/components/page.ts`의 `projectSlugs`에 경로를 추가합니다. 홈페이지 최근 프로젝트에도 표시하려면 `src/content/buildings.ts`와 `src/content/translations.ts`에도 항목을 추가합니다.
+3. 프로젝트 목록에서 보이도록 `src/content/project-index.ts`의 `projectIndex`에 경로를 추가합니다. 홈페이지 최근 프로젝트에도 표시하려면 `src/content/buildings.ts`와 `src/content/translations.ts`에도 항목을 추가합니다.
 4. `npm run build` 후 `dist/건물-경로/index.html`이 생성되는지, 프로젝트 목록에서 들어가기와 새로고침이 되는지 확인합니다. 원본 자료를 자동 수집하는 스크립트는 관리용 보조 도구이며 일반 자료 추가에는 필요하지 않습니다.

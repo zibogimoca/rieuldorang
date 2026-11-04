@@ -161,31 +161,53 @@ function render(): void {
   }
   const journal = element("section", "section news");
   journal.id = "news";
-  journal.append(
-    element("p", "eyebrow", "03 / JOURNAL"),
-    element("h2", "", t.news),
-  );
-  for (const item of news) {
-    const link = element("a", "news-item");
-    link.href = pageUrl(
-      item.href.endsWith("/stay-collection") ? "stay-collection" : "news",
-    );
-    if (item.image) {
-      const image = element("img");
-      image.src = import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
-      image.alt = item.image.alt;
-      image.loading = "lazy";
-      link.append(image);
+  const newsColumns = element("div", "home-news-columns");
+  const column = (items: typeof news) => {
+    const result = element("div", "home-news-column");
+    for (const item of items) {
+      const link = element("a", "home-news-card");
+      link.href = pageUrl(
+        item.href.endsWith("/stay-collection") ? "stay-collection" : "news",
+      );
+      if (item.image) {
+        const image = element("img");
+        image.src =
+          import.meta.env.BASE_URL + item.image.src.replace(/^\//, "");
+        image.alt = item.image.alt;
+        image.loading = "lazy";
+        link.append(image);
+      }
+      const caption = element("span", "home-news-caption");
+      caption.append(
+        element("span", "", t.newsNames[item.id] ?? item.title),
+        element("span", "", "More ›"),
+      );
+      link.append(caption);
+      result.append(link);
     }
-    const content = element("div", "news-content");
-    content.append(element("h3", "", t.newsNames[item.id] ?? item.title));
-    if (item.body) content.append(element("p", "", item.body[locale]));
-    link.append(content, element("span", "", `${t.more} ↗`));
-    journal.append(link);
+    return result;
+  };
+  const feature = element("div", "home-news-feature");
+  feature.append(element("h2", "", "News"));
+  const exhibition = news.find((item) => item.id === "stay-exhibition");
+  if (exhibition?.body) {
+    feature.append(
+      element("h3", "", exhibition.title),
+      element("p", "", exhibition.body.en),
+      element("h3", "", "특별한 쉼표 – 건축가 특별전 (2주 연장)"),
+      element("p", "", exhibition.body.ko),
+    );
   }
+  newsColumns.append(column(news.slice(0, 4)), feature, column(news.slice(5)));
+  const allNews = element("a", "text-link home-all-news", "News ›");
+  allNews.href = pageUrl("news");
+  journal.append(newsColumns, allNews);
   main.append(hero, spaces, about, journal);
   app.append(skip, header, main, createFooter(locale));
   const disposePageMotion = initializeMotion();
-  disposeMotion = () => { disposePageMotion(); disposeDock(); };
+  disposeMotion = () => {
+    disposePageMotion();
+    disposeDock();
+  };
 }
 render();

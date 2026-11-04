@@ -1,4 +1,5 @@
 import { element } from "./dom";
+import { projectIndex } from "../content/project-index";
 import type { Locale } from "../content/translations";
 
 type OriginalPage = {
@@ -56,45 +57,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   }
   if (slug === "projects-rieuldorang") {
     const gallery = element("div", "original-project-grid");
-    const projectSlugs = [
-      "ara-o-wall-house",
-      "sea-essay",
-      "oad-hotel",
-      "dorang-de-ville",
-      "gureung-dowon",
-      "maemisong",
-      "marea",
-      "jayeon-jogak",
-      "aphae-de-sel",
-      "with-home",
-      "mindeulle-kindergarten",
-      "baomaru",
-      "botongi-jib",
-      "villa-ville-kulla",
-      "namhae-house",
-      "who-owns-the-space",
-      "stay-hadamdam",
-      "sihieung-ri-villa",
-    ];
-    const thumbnailIds = [
-      "4f5dda60af7c40fd9461267ded438e51",
-      "79630d5e40124530ad38ea77c66fc892",
-      "7e6d81eba3334ff697053098dfe523ee",
-      "1a479fd0233e477f971ad6536799746c",
-      "8a3356d19e5c483185b5ab40769ca629",
-      "dbe3c5497ff44033ae33e207e8262176",
-      "813d0c5a6f1142a880e4ecc1a91c4147",
-      "aa9304870a024a47ae5c295b8470e1ea",
-      "15296a0fa5494e69820dc8d8fcff0bbc",
-      "ca437be6b19b47fc879fc41f27bfe87c",
-      "4db8a3048a2242dfa3ba648a996df551",
-      "fd0af9aaafb247d28b442a6b64988e96",
-      "24c3253ee7524649845e0c611036a467",
-      "c5cb6c380a0644739aaaa6a3e18af115",
-      "27c829a97f26453cb9d56c16ee9e6ae9",
-      "92f2dfb9d9ad4ae68910a6eaf4aea16f",
-    ];
-    for (const [index, project] of projectSlugs.entries()) {
+    for (const { slug: project, thumbnailId } of projectIndex) {
       const item = originalPages[project];
       if (!item?.images[0]) continue;
       const link = element("a", "original-project-tile");
@@ -103,7 +66,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
       link.setAttribute("aria-label", title);
       const thumbnail =
         data.images.find((image) =>
-          image.source.includes(thumbnailIds[index] ?? "__none__"),
+          image.source.includes(thumbnailId ?? "__none__"),
         ) ?? item.images[0];
       link.append(
         imageFor(thumbnail),
@@ -153,13 +116,22 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
       const url = links[title];
       if (data.images[image]) {
         const photo = imageFor(data.images[image]);
-        if (url) { const link = element("a"); link.href = url; link.setAttribute("aria-label", data.text[title]); link.append(photo); row.append(link); }
-        else row.append(photo);
+        if (url) {
+          const link = element("a");
+          link.href = url;
+          link.setAttribute("aria-label", data.text[title]);
+          link.append(photo);
+          row.append(link);
+        } else row.append(photo);
       }
       const copy = element("div", "original-news-copy");
       const heading = element("h2", "", data.text[title]);
-      if (url) { const link = element("a"); link.href = url; link.append(heading); copy.append(link); }
-      else copy.append(heading);
+      if (url) {
+        const link = element("a");
+        link.href = url;
+        link.append(heading);
+        copy.append(link);
+      } else copy.append(heading);
       if (date !== null)
         copy.append(element("p", "original-news-date", data.text[date]));
       copy.append(textBlock(data.text[description]));
@@ -190,11 +162,16 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   const descriptions = element("div", "original-descriptions");
   data.text
     .slice(3)
-    .filter((text) => ![">", "<", "Project Gallery", "​>", "​<"].includes(text) && (slug === "ara-o-wall-house" || text !== "강력한 사생활 보호를 위한 가벽"))
+    .filter(
+      (text) =>
+        ![">", "<", "Project Gallery", "​>", "​<"].includes(text) &&
+        (slug === "ara-o-wall-house" ||
+          text !== "강력한 사생활 보호를 위한 가벽"),
+    )
     .forEach((text) => descriptions.append(textBlock(text)));
   const images = element("div", "original-detail-images");
-  const inlineImages = data.images.slice(1).filter(item => item.alt);
-  const galleryImages = data.images.filter(item => !item.alt);
+  const inlineImages = data.images.slice(1).filter((item) => item.alt);
+  const galleryImages = data.images.filter((item) => !item.alt);
   inlineImages.forEach((item) => images.append(imageFor(item)));
   content.append(descriptions, images);
   main.append(content);
@@ -204,15 +181,37 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
     const track = element("div", "original-gallery-track");
     galleryImages.forEach((item, index) => {
       const image = imageFor(item);
-      image.alt = locale === "ko" ? `프로젝트 사진 ${index + 1}` : `Project photograph ${index + 1}`;
+      image.alt =
+        locale === "ko"
+          ? `프로젝트 사진 ${index + 1}`
+          : `Project photograph ${index + 1}`;
       track.append(image);
     });
     const controls = element("div", "original-gallery-controls");
-    for (const [direction, label] of [[-1, "‹"], [1, "›"]] as const) {
+    for (const [direction, label] of [
+      [-1, "‹"],
+      [1, "›"],
+    ] as const) {
       const button = element("button", "", label);
       button.type = "button";
-      button.setAttribute("aria-label", direction < 0 ? (locale === "ko" ? "이전 사진" : "Previous photos") : (locale === "ko" ? "다음 사진" : "Next photos"));
-      button.addEventListener("click", () => track.scrollBy({left: direction * track.clientWidth * .7, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"}));
+      button.setAttribute(
+        "aria-label",
+        direction < 0
+          ? locale === "ko"
+            ? "이전 사진"
+            : "Previous photos"
+          : locale === "ko"
+            ? "다음 사진"
+            : "Next photos",
+      );
+      button.addEventListener("click", () =>
+        track.scrollBy({
+          left: direction * track.clientWidth * 0.7,
+          behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "instant"
+            : "smooth",
+        }),
+      );
       controls.append(button);
     }
     gallery.append(track, controls);
