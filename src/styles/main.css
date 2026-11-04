@@ -1,11 +1,11 @@
 :root {
   font-family: Arial, "Noto Sans KR", sans-serif;
-  color: #25251f;
-  background: #f8f7f3;
+  color: #000000;
+  background: #ffffff;
   font-synthesis: none;
   line-height: 1.7;
-  --line: #d5d3cb;
-  --muted: #6d6c64;
+  --line: #000000;
+  --muted: #000000;
 }
 * {
   box-sizing: border-box;
@@ -25,7 +25,7 @@ a:hover {
 }
 a:focus-visible,
 summary:focus-visible {
-  outline: 3px solid #9d552c;
+  outline: 3px solid #e00012;
   outline-offset: 6px;
 }
 .site-header,
@@ -69,7 +69,7 @@ nav {
   display: block;
 }
 .hero h1 span:nth-child(2) {
-  color: #929580;
+  color: #e00012;
 }
 .hero-description {
   color: var(--muted);
@@ -129,7 +129,7 @@ nav {
 .building-visual {
   display: block;
   aspect-ratio: 1.35;
-  background: #e5e3dc;
+  background: #ffffff;
   overflow: hidden;
 }
 .building-visual img {
@@ -142,7 +142,7 @@ nav {
   display: block;
   width: 100%;
   height: 100%;
-  background: #dddcd4;
+  background: #ffffff;
 }
 .building-card > .eyebrow {
   margin-top: 20px;
@@ -180,7 +180,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 9vw;
   align-items: center;
-  background: #eeeee6;
+  background: #ffffff;
 }
 .portrait {
   width: 100%;
@@ -383,7 +383,7 @@ nav {
 
 /* 가독성과 터치 영역: 데스크톱과 모바일에서 같은 정보를 편하게 읽을 수 있게 합니다. */
 :root {
-  --muted: #55564e;
+  --muted: #000000;
   line-height: 1.65;
 }
 nav {
@@ -402,7 +402,7 @@ nav a,
 }
 .hero-caption {
   font-size: 13px;
-  color: #34352e;
+  color: #000000;
 }
 .section-intro,
 .summary,
