@@ -79,5 +79,61 @@
       "alt": "",
       "file": "stay-hadamdam/13.png"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    9,
+    10,
+    11
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 1781,
+    "heroWidth": 879,
+    "heroHeight": 563,
+    "texts": {},
+    "images": {
+      "a965e7_c783de37814c4d848ecee89aaa11dad8~mv2.jpg": {
+        "x": 494,
+        "y": 687,
+        "w": 896,
+        "h": 563
+      },
+      "a965e7_048ef88eeb0b491e976630f66496f533~mv2.jpg": {
+        "x": 943,
+        "y": 1295,
+        "w": 447,
+        "h": 559
+      },
+      "a965e7_9c5bc83f11454005b7bc81cd45ae61c8~mv2.jpg": {
+        "x": 943,
+        "y": 1295,
+        "w": 447,
+        "h": 559
+      },
+      "a965e7_3de97cdd74794d7d99e847cb60754e20~mv2.jpg": {
+        "x": 50,
+        "y": 1877,
+        "w": 896,
+        "h": 563
+      }
+    }
+  },
+  "navigation": {
+    "previous": "gureung-dowon",
+    "next": "marea"
+  },
+  "mobileLayout": {
+    "texts": {},
+    "images": {
+      "a965e7_c783de37814c4d848ecee89aaa11dad8~mv2.jpg": 481,
+      "a965e7_048ef88eeb0b491e976630f66496f533~mv2.jpg": 908,
+      "a965e7_9c5bc83f11454005b7bc81cd45ae61c8~mv2.jpg": 1323,
+      "a965e7_3de97cdd74794d7d99e847cb60754e20~mv2.jpg": 1537
+    },
+    "heroWidth": 369,
+    "heroHeight": 207
+  }
 }

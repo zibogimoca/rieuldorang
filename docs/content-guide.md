@@ -74,3 +74,5 @@
 2. 사진을 `public/images/pages/건물-경로/`에 보관하고 JSON의 `file`에 `건물-경로/01.jpg`처럼 적습니다. `file`은 실제 파일과 대소문자까지 같아야 합니다.
 3. 프로젝트 목록에서 보이도록 `src/content/project-index.ts`의 `projectIndex`에 경로와 목록에서 나타날 `subtitle`을 추가합니다. `thumbnailId`를 생략하면 상세 페이지의 첫 사진을 대표 사진으로 사용합니다. 홈페이지 최근 프로젝트에도 표시하려면 `src/content/buildings.ts`와 `src/content/translations.ts`에도 항목을 추가합니다.
 4. `npm run build` 후 `dist/건물-경로/index.html`이 생성되는지, 프로젝트 목록에서 들어가기와 새로고침이 되는지 확인합니다. 원본 자료를 자동 수집하는 스크립트는 관리용 보조 도구이며 일반 자료 추가에는 필요하지 않습니다.
+
+원본을 재현한 기존 상세 JSON에는 `visibleTextIndices`, `desktopLayout`, `mobileLayout`이 있을 수 있습니다. 본문을 추가하거나 순서를 바꾼 경우 이 인덱스와 위치 정보도 함께 갱신해야 합니다. 원본 좌표와 순서 재현이 필요하지 않은 새 페이지는 해당 필드들을 생략하면 일반 반응형 흐름으로 표시됩니다. 기존 원본 좌표를 제거하면 원본 배치가 바뀌므로 검토 후 수정하세요.

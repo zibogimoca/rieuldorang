@@ -38,7 +38,7 @@ docs/                     구조·규칙·운영·작성 안내
 
 - `src/content/pages/`: 원본 페이지별 텍스트와 사진 목록. 파일명은 원본 페이지 경로와 같습니다.
 - `public/images/pages/<페이지 경로>/`: 원본 페이지 사진. 중복 사진은 한 번만 보관하고 JSON의 `file`이 실제 위치를 가리킵니다. 각 파일의 `source`는 원본 이미지 식별자입니다.
-- `src/components/page.ts`: 프로젝트 목록·상세·소개·뉴스·문의 페이지 화면.
+- `src/components/page.ts`: 프로젝트 목록·상세·소개·뉴스·문의 페이지 화면. 원본 상세 배치의 데스크톱 좌표와 모바일 순서는 각 페이지 JSON에 보관합니다.
 - `scripts/import-original-pages.py`: 수집한 원본 HTML에서 페이지 JSON을 만드는 도구.
 - `scripts/download-original-images.py`: JSON에 기록된 원본 사진을 내려받는 도구.
 

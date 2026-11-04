@@ -111,5 +111,96 @@
       "alt": "",
       "file": "dorang-de-ville/20.png"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 1567,
+    "heroWidth": 880,
+    "heroHeight": 563,
+    "texts": {
+      "3": {
+        "x": 50,
+        "y": 911,
+        "w": 430,
+        "h": 116,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "Dorang de Ville is composed of three volumes, each placed in a linear arrangement facing the sea. The project aimed to create a quiet retreat that gently dissolves into the surrounding landscape rather than asserting itself as a conspicuous object. Each volume was designed as a restrained circular mass, with all nonessential elements removed to leave only the core spaces and functions required for rest.\n도랑드빌레는 세 개의 동으로 구성되었으며, 각각이 바다를 향해 나란히 배치되었다. 조용히 자연 속에 스며드는 휴식처를 목표로 삼아, 눈에 과하게 드러나지 않는 장소를 만들고자 했다. 각 동은 절제된 원형 매스로 계획되었고, 불필요한 요소를 덜어내어 휴식을 위한 최소한의 공간과 기능만을 남겼다."
+      },
+      "4": {
+        "x": 959,
+        "y": 1524,
+        "w": 431,
+        "h": 102,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "Superfluous elements were rigorously eliminated, retaining only the essential spaces for repose. A shallow ditch surrounding the volumes softly mediates the boundary with nature, allowing sunlight, breezes, and the sound of water to permeate the interiors seamlessly. Here, even a single gust of wind or a ray of afternoon light is intended to foster profound tranquility.\n불필요한 요소를 철저히 배제하고 휴식을 위한 본질적인 공간만을 남겼다. 주변의 얕은 도랑이 자연과의 경계를 부드럽게 연결하며, 햇살, 바람, 물소리와 같은 자연 요소들이 내부로 자연스럽게 유입되도록 설계하였다. 이곳에서 가벼운 바람 한 줄기나 오후 햇살 한 점조차 깊은 안식을 선사할 것으로 기대된다."
+      },
+      "5": {
+        "x": 513,
+        "y": 2001,
+        "w": 415,
+        "h": 102,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "The pool is precisely positioned beneath deep eaves facing the sea. These eaves modulate sunlight with finesse, casting shade that heightens awareness of time's passage and light's subtle shifts. The interplay of light and water—where sea and sky reflect in the ditch flowing toward the pool—creates a singular spatial gift.​\n수영장은 바다를 향한 깊은 처마 아래에 정밀하게 배치되었다. 이 처마는 햇빛을 세밀하게 조절하며 그늘을 형성함으로써 시간의 전개와 빛의 변화를 심층적으로 체감할 수 있게 한다. 도랑에 비친 바다와 하늘이 수영장으로 이어지며 빚어낸 빛과 물의 조화는 독특한 공간적 경험을 선사한다."
+      }
+    },
+    "images": {
+      "a965e7_b90fac99fa12483698f468432deabad5~mv2.jpg": {
+        "x": 508,
+        "y": 687,
+        "w": 882,
+        "h": 563
+      },
+      "a965e7_0beacd92480a4b989f2567409b970c7d~mv2.jpg": {
+        "x": 50,
+        "y": 1295,
+        "w": 899,
+        "h": 559
+      },
+      "a965e7_327f0301074744a68673e061a96f16c0~mv2.jpg": {
+        "x": 50,
+        "y": 1877,
+        "w": 447,
+        "h": 349
+      },
+      "a965e7_5aaeb82c85a14613a952a183fee2d947~mv2.jpg": {
+        "x": 943,
+        "y": 1877,
+        "w": 447,
+        "h": 349
+      }
+    }
+  },
+  "navigation": {
+    "previous": "gureung-dowon",
+    "next": "gureung-dowon"
+  },
+  "mobileLayout": {
+    "texts": {
+      "3": 776,
+      "4": 1211,
+      "5": 1641
+    },
+    "images": {
+      "a965e7_b90fac99fa12483698f468432deabad5~mv2.jpg": 556,
+      "a965e7_0beacd92480a4b989f2567409b970c7d~mv2.jpg": 983,
+      "a965e7_327f0301074744a68673e061a96f16c0~mv2.jpg": 1404,
+      "a965e7_5aaeb82c85a14613a952a183fee2d947~mv2.jpg": 1819
+    },
+    "heroWidth": 369,
+    "heroHeight": 245
+  }
 }

@@ -92,5 +92,114 @@
       "alt": "",
       "file": "with-home/16.png"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 2308,
+    "heroWidth": 880,
+    "heroHeight": 563,
+    "texts": {
+      "3": {
+        "x": 50,
+        "y": 831,
+        "w": 427,
+        "h": 276,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "The identical landscapes unfolding in new towns\nThe area where With Home is located is filled with cost-effective, “reasonable alternative” mixed-use houses, no different from any other newly developed town. Almost every region in the country presents the same scenery—only the building shapes change slightly depending on whether the sloped-roof legal requirement applies or not.\nSince construction companies and development firms primarily lead most of the projects, it’s no surprise that the landscapes end up looking nearly identical. In a place like this, if a boldly designed, uniquely styled mixed-use building appears, it is often treated as a hero—or sometimes met with jealousy. The reactions are usually very clear and extreme.\n신도시에서 벌어지고 있는 똑같은 풍경\n위드홈이 위치한 지역은 다른 신도시와 별다를 것 없이 가성비 좋은 합리적인 대안들의 상가주택들이 즐비한 곳이다. 전국이 거의 똑같은 전경을 보여주는데 경사지붕의 법적조건이 있느냐 없느냐에 따라 건물의 형태가 조금 다를 뿐이다.\n시공사나 시행개발사들의 주도하에 진행되다보니 풍경이 거의 유사한 것도 무리는 아니다. 이런 곳에 독특한 디자인으로 무장한 용감무쌍한 상가주택이 등장하면 영웅취급을 받거나 시기를 받는 등의 단적인 반응들이 나타난다. \n​\n일반적인 상가주택의 경제적 논리\n일반 신도시 건물의 공통된 특징은 무엇일까? 그것은 볼륨이다. 대지의 크기가 비슷하고 규모가 비슷하다보니 건물의 볼륨이 비슷할 수밖에 없다. 1층은 당연히 상가이고 2~3층은 임대주택, 4층은 소유주가 사는 주택이 놓여진다.\n거의 공식화된 볼륨을 모두가 따라간다. 왜냐하면 법적인 규제 내에서 비용투자 대비 가장 효율적이기 때문이다. "
+      },
+      "4": {
+        "x": 962,
+        "y": 1322,
+        "w": 428,
+        "h": 389,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "​What does creative design mean?\nMixed-use housing sites are places where design limitations are extremely clear—sunlight-obstruction regulations, sloped-roof laws, and many standardized conditions make it difficult to escape the frame of generalized design. In such a site, what does creative design actually mean? And how is it even possible? These questions dominated the design process.\nThe first step was to adopt a perspective that breaks away from existing conventions. When we examined the assumptions we were trapped in, we realized that the numerous site restrictions made it difficult to achieve a simple, coherent form. If so, the first step toward breaking the conventional mindset was to transform these complex conditions into a simple overall massing. We needed an idea that could extract simplicity.\nThe upper left portion of the mass was inevitably complex no matter what we did. That meant the remaining opportunity lay in the lower volume and the upper right. If these parts could be shaped into a simple, clean form—one that visually contains and balances the complexity on the upper left—then a new sense of simplicity could be achieved.\nThe simplicity obtained in this way enabled a consistent architectural language, one that we believed could even operate as a form of branding.\n \n창의적 디자인이란 무엇일까\n디자인 한계가 너무나 명확하고 일조사선 등으로 디자인은 일반화의 틀을 벗어나기 어려운 곳이 상가주택 부지이다. 이런 대지에서 창의적인 디자인은 무엇일까 그것은 어떻게 가능할까라는 의문이 디자인 과정을 지배했다.\n먼저 기존의 틀을 벗어난 시각을 갖는 것이 중요했다. 기존에 어떤 관념에 갇혀있는지 분석해보니 여러 가지 한계사항들 때문에 조형이 단순하게 나오기 어렵다는 것이었다. 그렇다면 그 복잡한 사항들을 단순한 조형으로 만들어내는 것이 기존의 관념에서 벗어난 시각의 첫 단추였다. 단순함을 획득할 수 있는 아이디어가 필요했다. 상부의 좌측은 어떻게 해도 복잡함을 벗어나기 어려웠다. 그렇다면 남은 부분은 하단부와 상부의 우측이었는데 이 부분을 단순한 조형으로 만들어서 복잡한 상부의 좌측을 담아내는 역할을 한다면 단순함을 획득할 수 있다고 판단했다.\n​\n이렇게 획득한 단순함은 일관성 있는 언어를 가질 수 있었고 그것은 브랜딩의 언어로서 작동할 수 있다고 생각했다."
+      },
+      "5": {
+        "x": 50,
+        "y": 1862,
+        "w": 427,
+        "h": 403,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "Limits of Design\nIn a newly developed town where landscapes are governed by rational, standardized models, the limits of architectural design are clear. These limits mean that the scope for formal design intervention is narrow. Within the volumes defined by sunlight regulations and building coverage ratios, design approaches now require a fresh perspective. One key aspect of this is design direction—that is, understanding what each detail, composition, and exterior form ultimately serves. From this perspective, the design direction of With Home represents the establishment of a clear identity.\n \nThe program for With Home required renting out the 2nd and 3rd floors, using the 4th floor as a residential space, and dedicating the 1st floor as a showroom related to the business. With Home is the name of the client’s home fashion manufacturing and sales company. Inspired by the coexistence of residential and business spaces within a single building, the concept aimed to create a residential-like office and an office-like residence, hence the name With Home. Accordingly, the project’s task naturally became: how to build the With Home home fashion brand image from the perspective of a company headquarters\n \n디자인의 한계\n이와 같이 합리적인 논리의 모델들이 구축된 풍경의 신도시에서 건축 디자인의 한계는 분명히 존재한다. 그 한계라 함은 형태적으로 디자인 의지가 개입하는 범위가 좁다는 것을 의미한다. 일조경계선이나 건폐율로 정해지는 볼륨 내에서 접근할 수 있는 디자인은 이제 다른 관점을 요구한다. 그 중에 하나는 디자인의 방향성이다. 방향성이라 함은 디테일이나 구성방식, 외형디자인 등이 무엇을 위해 완성되어가느냐로 볼 수 있는 것이다. 이런 관점에서 위드홈 상가주택의 방향성은 곧 정체성의 구축을 의미한다. \n\n위드홈은 2~3층을 임대하고 4층은 주거로, 1층은 사업과 관련된 쇼룸으로 구성하는 것이 요구조건이다. 위드홈이란 건축주의 홈패션 제조판매업체 이름인데 주거공간과 사업공간이 같은 건물에 있다는 것에 착안하여 사옥 같은 주거, 주거 같은 사옥을 표방하여 위드홈이란 이름을 붙이게 되었다. 그래서 프로젝트의 과제는 자연스럽게 사옥의 관점에서 위드홈이란 홈패션 이미지를 어떻게 구축할 것인가로 정해졌다. "
+      },
+      "6": {
+        "x": 962,
+        "y": 2456,
+        "w": 428,
+        "h": 424,
+        "fontSize": 9.066,
+        "lineHeight": 11.786,
+        "renderText": "Branding in Architecture\nFor With Home mixed-use housing, the image built through its design direction was intended to represent the corporate identity itself. This building functioned both as the home and showroom for the client’s home fashion brand, With Home. To address the sloped walls required by sunlight regulations, the design adopted an iconic pentagonal gable form—symbolizing “home” and giving the building a distinctive identity.\nSpecifically, the pentagonal gable at the 4th floor symbolizes the “Home” in Home Fashion, while the curved walls rise around the building from the 2nd floor upward. These curved walls express the flexibility of fabric while simultaneously conveying inclusiveness, embracing the entire structure.\nIconic design carries the risk of overtly expressing an image. At With Home, this risk was managed through a clear design direction. Establishing direction in design ensures that the associations evoked by the iconic form are aligned with the intended image. Individual interpretations may vary, but if these associations ultimately converge toward the intended meaning, the image can be considered successfully established.\nThis approach is analogous to branding, which is generally understood as the process of creating an image of a brand in the minds of customers. From this perspective, the design direction of With Home achieved an architectural branding effect, evoking the image of home fashion. The iconic design not only enhances this branding effect but also realizes a clear architectural form, achieving the dual goal of a residence with the presence of a company headquarters.\n \n건축에서 브랜딩이란\n위드홈 상가주택은 디자인 방향성에 따라 구축된 이미지가 곧 기업의 정체성을 의미하고자 하였다. 이 건물은 홈패션 브랜드인 ‘With Home’을 운영하는 건축주의 주택이자 쇼룸이었다는 점과 일조의 확보를 위한 경계선에 따른 경사벽체를 디자인적으로 해결하기 위해 집을 의미하는 5각형 박공형태의 아이코닉 디자인(Iconic Design)을 사용하였다. 구체적으로 홈패션의 홈(Home)을 상징하는 4층 부분의 박공형태를 중심으로 2층 이상의 건물전체를 곡선 벽이 감싸 올라가는 형태이다. 곡선의 벽은 패브릭의 유연성을 표현함과 동시에 건물전체를 아우르는 포용성을 동시에 갖는다. 이와 같은 아이코닉 디자인 방법은 자칫 이미지가 직접적으로 표현되는 우를 범할 수 있다. 위드홈에서는 이것을 디자인 방향성으로 방어하고자 하였다. 디자인에 방향을 둔다는 것은 아이코닉 디자인을 통해 연상되는 것들이 의도하는 이미지에 근접하게 다다를 수 있게 한다는 것을 의미한다. 개개인별로 연상되는 것들은 차이가 있을 수 있다. 그러나 그 연상되는 것들이 추상적이지만 의미가 원하는 대로 귀결된다면 어느 정도 이미지 구축에 성공했다고 볼 수 있다. 이것은 브랜딩의 방법과 유사하다. 일반적으로 브랜딩이란 브랜드를 고객의 생각 속에 이미지화하는 과정이라고 설명한다. 이런 관점에서 위드홈의 디자인 방향성은 사람들에게 홈패션의 이미지를 연상시키는 건축적 브랜딩의 효과를 얻었다고 볼 수 있다. 위드홈의 집을 상징하는 아이코닉 디자인은 건축적 브랜딩이라는 효과와 더불어 보다 선명한 형태로 완성되면서 사옥 같은 주거라는 중의적 목표에 어느 정도 다다르지 않았나 생각한다."
+      }
+    },
+    "images": {
+      "a965e7_63a970be89cd49cfb93b0e7f2b7aa3f6~mv2.jpg": {
+        "x": 507,
+        "y": 687,
+        "w": 883,
+        "h": 563
+      },
+      "a965e7_04a9fd7d9c624d0d9bb70e608d002a31~mv2.jpg": {
+        "x": 50,
+        "y": 1295,
+        "w": 879,
+        "h": 442
+      },
+      "a965e7_0c3435a8cbbc4488b06185b0d6a4059f~mv2.jpg": {
+        "x": 1218,
+        "y": 3045,
+        "w": 282,
+        "h": 282
+      },
+      "a965e7_68317f40aec44ecc8e9c457fc8a71c16~mv2.jpg": {
+        "x": 971,
+        "y": 1783,
+        "w": 419,
+        "h": 563
+      },
+      "a965e7_c103841c7efd41ef988ea3081f086ce4~mv2.jpg": {
+        "x": 50,
+        "y": 2391,
+        "w": 879,
+        "h": 556
+      }
+    }
+  },
+  "navigation": {
+    "previous": "aphae-de-sel",
+    "next": "mindeulle-kindergarten"
+  },
+  "mobileLayout": {
+    "texts": {
+      "3": 803,
+      "4": 1554,
+      "5": 2485,
+      "6": 3399
+    },
+    "images": {
+      "a965e7_63a970be89cd49cfb93b0e7f2b7aa3f6~mv2.jpg": 554,
+      "a965e7_04a9fd7d9c624d0d9bb70e608d002a31~mv2.jpg": 1305,
+      "a965e7_0c3435a8cbbc4488b06185b0d6a4059f~mv2.jpg": 2236,
+      "a965e7_68317f40aec44ecc8e9c457fc8a71c16~mv2.jpg": 3137,
+      "a965e7_c103841c7efd41ef988ea3081f086ce4~mv2.jpg": 4101
+    },
+    "heroWidth": 369,
+    "heroHeight": 244
+  }
 }

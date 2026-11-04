@@ -71,5 +71,110 @@
       "alt": "",
       "file": "oad-hotel/12.jpg"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 1784,
+    "heroWidth": 880,
+    "heroHeight": 563,
+    "texts": {
+      "3": {
+        "x": 50,
+        "y": 831,
+        "w": 418,
+        "h": 276,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "OAD Hotel is a hillside hospitality and cultural complex in Busan developed as a collaborative project between Rieuldorang and MVRDV. The scheme reinterprets the fine-grained fabric of Busan’s urban villages as a contemporary collective landscape, composed of clustered low-rise volumes that step with the topography to frame sea views while integrating sensitively into the existing neighborhood.\n \nSet on the steep slopes of Yeongdo, long shaped by shipbuilding, reclamation, and refugee settlements, the project responds to a landscape of small plots, winding roads, and a growing concentration of vacant houses. Instead of erasing this condition through large-scale redevelopment, the proposal adopts the scale, porosity, and informality of Busan’s hillside villages as a model for a new mixed-use stay and amenity destination.\n​\nOAD부산은 MVRDV가 디자인하고 리을도랑이 협력하여 설계한 관광숙박, 문화 복합 프로젝트입니다. 부산 산복 마을의 미세한 조직과 생활 스케일을 현대적으로 재해석하여, 지형을 따라 계단식으로 배치된 저층 클러스터들이 바다 조망을 담아내면서도 주변 마을과 유기적으로 어우러지는 집합적 랜드스케이프를 제안합니다. \n \n프로젝트는 조선업·매립·피난촌 형성으로 이어지는 영도의 역사와, 급경사지 소규모 필지와 빈집이 혼재된 현재의 도시 조건에 응답합니다. 대규모 수평 개발로 기존 마을을 지우기보다, 부산 산복마을의 스케일·공공성·보행 경험을 새로운 숙박·문화 프로그램과 결합해 확장된 마을 구조로 재구성합니다."
+      },
+      "4": {
+        "x": 982,
+        "y": 1445,
+        "w": 408,
+        "h": 218,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "The design reshapes the idea of a landmark from a single object into a shared community identity composed of many small buildings and open spaces. A “light development” strategy replaces an all-at-once grand opening with a scenario-based, phased framework that anticipates uncertain futures, keeps earthworks minimal, and preserves flexibility for subsequent extensions and program adjustments.\nBuildings are rotated to maintain distance, maximize views, and create a sequence of plazas, ramps, and stairs that separate public, service, and guest circulations, ensuring clear logistics and fire access without sacrificing the pedestrian experience.\n​\n디자인은 단일 오브제로서의 랜드마크 개념을 넘어, 다수의 작은 건축과 열린 외부 공간이 함께 만들어내는 공유된 커뮤니티 정체성으로 랜드스케이프를 재구성하는 데 초점을 맞추고 있습니다. 또한 일시에 완공하는 개발 방식 대신, 불확실한 미래를 전제로 한 시나리오 기반·단계적 개발 전략을 통해 토공을 최소화하고, 향후 확장과 프로그램 조정에 유연하게 대응할 수 있는 구조를 마련합니다.\n저층부에는 최저 레벨을 활용한 지하 주차와 서비스 동선을 삽입하고, 상부에는 회전 배치된 볼륨들 사이에 광장, 경사로, 계단이 연속되는 입체 보행 네트워크를 통해 공용·객실·물류·소방 동선을 명확히 분리합니다."
+      },
+      "5": {
+        "x": 50,
+        "y": 2059,
+        "w": 418,
+        "h": 160,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "Stay units, oriented to the outer edges, secure panoramic views and privacy, while amenity programs—including café, restaurant, and cultural spaces—are concentrated around the entrance and main plazas to anchor public life. A unified façade system wraps each volume from ground to roof with locally attuned materials and a curated palette of Busan-inspired colors, complemented by rectilinear landscape patches, tree pots, and grasses that extend the architectural rhythm into a generous, climate-conscious open space network. \n​\n스테이 유닛은 대지 외곽 방향으로 배치해 객실별 파노라마 뷰와 프라이버시를 확보하고, 카페·레스토랑·뮤직 스페이스 등 어메니티는 진입부와 주요 광장 주변에 집중시켜 공공 생활의 밀도를 높입니다. 부산의 해안 도시 색채에서 추출한 다채로운 색상 팔레트와 단일 재료가 바닥에서 지붕까지 볼륨을 감싸는 입면 시스템, 직사각형 패턴의 식재와 화분, 초본류 조경이 어우러져 건축과 외부 공간이 하나의 연속된 컬러 필드이자 기후 대응형 오픈스페이스로 기능합니다."
+      }
+    },
+    "images": {
+      "a965e7_df81913706a94d2eb110902aa8e0eabc~mv2.jpg": {
+        "x": 504,
+        "y": 687,
+        "w": 886,
+        "h": 563
+      },
+      "a965e7_3568c8c1975a45ecae8c8c5c691e0559~mv2.png": {
+        "x": 50,
+        "y": 1273,
+        "w": 454,
+        "h": 281
+      },
+      "a965e7_a0e7c328568647f9b75ea750229fe5d6~mv2.png": {
+        "x": 504,
+        "y": 1273,
+        "w": 454,
+        "h": 281
+      },
+      "a965e7_f23e8492b5fd49b3a6c7d95dfac6fbd4~mv2.png": {
+        "x": 50,
+        "y": 1554,
+        "w": 454,
+        "h": 281
+      },
+      "a965e7_07659d91b3924a50bd303cd88639f5b9~mv2.png": {
+        "x": 504,
+        "y": 1554,
+        "w": 454,
+        "h": 281
+      },
+      "a965e7_b2814ab6efa144e5a8ad975df9100b7b~mv2.gif": {
+        "x": 504,
+        "y": 1858,
+        "w": 886,
+        "h": 563
+      }
+    }
+  },
+  "navigation": {
+    "previous": "sea-essay",
+    "next": "dorang-de-ville"
+  },
+  "mobileLayout": {
+    "texts": {
+      "3": 700,
+      "4": 2010,
+      "5": 2619
+    },
+    "images": {
+      "a965e7_df81913706a94d2eb110902aa8e0eabc~mv2.jpg": 481,
+      "a965e7_3568c8c1975a45ecae8c8c5c691e0559~mv2.png": 1148,
+      "a965e7_a0e7c328568647f9b75ea750229fe5d6~mv2.png": 1356,
+      "a965e7_f23e8492b5fd49b3a6c7d95dfac6fbd4~mv2.png": 1563,
+      "a965e7_07659d91b3924a50bd303cd88639f5b9~mv2.png": 1771,
+      "a965e7_b2814ab6efa144e5a8ad975df9100b7b~mv2.gif": 2380
+    },
+    "heroWidth": 369,
+    "heroHeight": 207
+  }
 }

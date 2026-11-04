@@ -56,5 +56,14 @@ for path in sorted(SOURCE.glob('*.html')):
     parser.feed(path.read_text())
     for index, image in enumerate(parser.images, 1):
         image['file'] = claimed.setdefault(image['source'], f"{path.stem}/{index:02d}{Path(image['source']).suffix.lower()}")
-    (OUTPUT / f'{path.stem}.json').write_text(json.dumps({'text': parser.text, 'images': parser.images}, ensure_ascii=False, indent=2) + '\n')
+    output_path = OUTPUT / f'{path.stem}.json'
+    # Do not silently retain old indexes if source text changes: review visibility again.
+    result = {'text': parser.text, 'images': parser.images}
+    if output_path.exists():
+        existing = json.loads(output_path.read_text())
+        if existing.get('text') == parser.text:
+            for key in ('visibleTextIndices', 'desktopLayout', 'mobileLayout', 'navigation'):
+                if key in existing:
+                    result[key] = existing[key]
+    output_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     print(f'{path.stem}: {len(parser.text)} text blocks, {len(parser.images)} images')

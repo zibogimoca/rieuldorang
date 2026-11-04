@@ -1160,15 +1160,309 @@ nav a,
 }
 /* 원본 상세 화면: 첫 사진 아래 두 번째 사진은 본문 오른쪽에서 바로 시작합니다. */
 @media (min-width: 701px) {
-  .original-detail-hero > img { height: min(39.1vw, 563px); }
-  .original-detail-content { grid-template-columns: 1fr 2fr; gap: 24px; }
-  .original-detail-images { padding-top: 0; }
+  .original-detail-hero > img {
+    height: min(39.1vw, 563px);
+  }
+  .original-detail-content {
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+  }
+  .original-detail-images {
+    padding-top: 0;
+  }
 }
 /* 원본 전체 프로젝트 목록의 가운데 설명과 사진 확대 효과. */
-.original-project-tile { overflow: visible; border-radius: 8px; }
-.original-project-tile img { border-radius: 8px; transition: transform .45s ease; }
-.original-project-title { inset: 50% auto auto 50%; width: 80%; padding: 14px; border: 1px solid #fff; border-radius: 10px; background: #0008; text-align: center; transform: translate(-50%, -50%); backdrop-filter: blur(10px); }
-.original-project-title span, .original-project-title small { display: block; }
-.original-project-title small { margin-top: 6px; }
-.original-project-tile:hover, .original-project-tile:focus-visible { z-index: 1; }
-@media (hover: hover) and (prefers-reduced-motion: no-preference) { .original-project-tile:hover img { transform: scale(1.07); } }
+.original-project-tile {
+  overflow: visible;
+  border-radius: 8px;
+}
+.original-project-tile img {
+  border-radius: 8px;
+  transition: transform 0.45s ease;
+}
+.original-project-title {
+  inset: 50% auto auto 50%;
+  width: 80%;
+  padding: 14px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #0008;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+.original-project-title span,
+.original-project-title small {
+  display: block;
+}
+.original-project-title small {
+  margin-top: 6px;
+}
+.original-project-tile:hover,
+.original-project-tile:focus-visible {
+  z-index: 1;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .original-project-tile:hover img {
+    transform: scale(1.07);
+  }
+}
+@media (min-width: 701px) {
+  #spaces {
+    grid-template-columns: 26% 1fr;
+    column-gap: 9.5%;
+  }
+  #spaces .building-grid {
+    column-gap: 10.3%;
+  }
+  #spaces .building-column:first-child,
+  .home-news-column:first-child {
+    padding-top: 56px;
+  }
+}
+@media (min-width: 701px) {
+  #spaces .building-grid {
+    padding-top: 26px;
+  }
+  #spaces .section-intro p {
+    padding: 10px;
+  }
+}
+@media (min-width: 701px) {
+  .original-detail-content .original-text {
+    font-size: 9.1px;
+    line-height: 1.6;
+  }
+}
+.original-project-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  border-block: 1px solid #000;
+  margin: 60px auto;
+  max-width: 380px;
+}
+.original-project-navigation a {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+/* 페이지마다 다른 원본 데스크톱 본문·사진 배치. 모바일은 일반 흐름으로 표시합니다. */
+@media (min-width: 701px) {
+  .original-page {
+    margin-top: 24px;
+  }
+  .original-detail-hero > img {
+    height: auto;
+    aspect-ratio: var(--original-aspect, 880 / 563);
+  }
+  .original-detail-info > .original-text:last-child {
+    margin-bottom: 0;
+  }
+  .original-detail-content[data-original-layout] {
+    display: block;
+    position: relative;
+    margin-top: 45px;
+    padding: 0;
+    height: var(--original-height);
+  }
+  .original-detail-content[data-original-layout] .original-descriptions,
+  .original-detail-content[data-original-layout] .original-detail-images {
+    display: contents;
+  }
+  .original-detail-content[data-original-layout]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32%;
+    border-top: 1px solid #000;
+  }
+  .original-detail-content[data-original-layout] .original-layout-item {
+    position: absolute;
+    left: var(--original-left);
+    top: var(--original-top);
+    width: var(--original-width);
+    margin: 0;
+  }
+  .original-detail-content[data-original-layout] img.original-layout-item {
+    height: auto;
+    aspect-ratio: var(--original-ratio);
+    object-fit: cover;
+  }
+  .original-detail-content[data-original-layout] .original-layout-hidden {
+    display: none;
+  }
+  .original-detail-content[data-original-layout] + .original-gallery {
+    margin-top: 0;
+  }
+}
+
+/* 원본 프로젝트 갤러리는 5열 이미지 격자입니다. */
+.original-gallery-track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  overflow: visible;
+}
+.original-gallery-track img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .original-gallery-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .original-gallery-track img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 원본 헤더는 스크롤 중에도 화면 위에 머뭅니다. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+.site-header > * {
+  pointer-events: auto;
+}
+.site-header nav {
+  background: #ffffffcc;
+  backdrop-filter: blur(12px);
+}
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 10px 3.5vw;
+  text-align: center;
+}
+.footer-identity .logo {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.footer-identity p {
+  margin: 4px 0;
+}
+.footer-nav {
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .site-footer {
+    margin: 0;
+    align-items: center;
+  }
+  .footer-identity .logo {
+    font-size: 32px;
+  }
+}
+/* 원본 모바일: 인트로 사진과 전체 프로젝트를 한 장씩 보여줍니다. */
+@media (max-width: 700px) {
+  .intro-track {
+    height: 85vw;
+    min-height: 0;
+  }
+  .intro-image,
+  .intro-image-wide {
+    flex-basis: 100%;
+  }
+  .intro-captions {
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+  }
+  .intro-captions span {
+    flex: 0 0 52%;
+    white-space: nowrap;
+    font-size: 22px;
+  }
+  .original-project-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .original-project-tile {
+    aspect-ratio: 1;
+  }
+  .original-project-title {
+    opacity: 1;
+    top: auto;
+    bottom: 4%;
+    transform: translateX(-50%);
+    width: 76%;
+  }
+}
+@media (max-width: 700px) {
+  .original-gallery-track {
+    grid-template-columns: 1fr;
+  }
+  #spaces .section-intro {
+    display: none;
+  }
+}
+@media (min-width: 701px) {
+  .original-desktop-hidden {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .original-detail-content[data-mobile-layout] {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .original-detail-content[data-mobile-layout] .original-descriptions,
+  .original-detail-content[data-mobile-layout] .original-detail-images {
+    display: contents;
+  }
+  .original-detail-content[data-mobile-layout] .original-layout-item,
+  .original-detail-content[data-mobile-layout] .original-layout-hidden {
+    order: var(--mobile-order, 99999);
+  }
+  .original-detail-content[data-mobile-layout] .original-mobile-hidden {
+    display: none;
+  }
+  .original-detail-content[data-mobile-layout] img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .original-page {
+    margin: 0 10px 60px;
+  }
+  .original-detail-hero {
+    gap: 10px;
+  }
+  .original-detail-info {
+    gap: 18px;
+  }
+  .original-detail-content[data-mobile-layout] .original-text {
+    border-top: 1px solid #000;
+    padding-top: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .original-detail-hero > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: var(--mobile-aspect, 369 / 226);
+    object-fit: cover;
+  }
+}
+@media (min-width: 701px) {
+  .original-detail-content[data-original-layout] p.original-layout-item {
+    font-size: var(--original-font-size, 9.1px);
+    line-height: var(--original-line-height, 1.6);
+  }
+}

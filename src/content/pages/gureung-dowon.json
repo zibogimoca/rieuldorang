@@ -118,5 +118,95 @@
       "alt": "",
       "file": "gureung-dowon/21.png"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 1566,
+    "heroWidth": 880,
+    "heroHeight": 563,
+    "texts": {
+      "3": {
+        "x": 50,
+        "y": 874,
+        "w": 430,
+        "h": 189,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "Gyeongju is a city that holds a thousand years of history, where cultural heritage bearing the layers of time blends harmoniously with serene landscapes. Among them, Hwangridan-gil—the path connecting Cheomseongdae and Daereungwon—is a place where the past and present coexist, beloved by many visitors.\nInspired by the gentle curves and quiet beauty of Daereungwon, we designed a space where one can enjoy a retreat that feels almost like stepping into a hidden paradise. From this process came the name “Gureungdowon,” reflecting our aspiration to create a resting place that embodies the essence of Gyeongju.\n​\n경주는 천년의 역사를 간직한 도시이며, 시간의 결이 쌓인 문화재와 고즈넉한 풍경이 어우러진 곳입니다. 그중에서도 첨성대와 대릉원으로 이어지는 황리단길은 과거와 현재가 공존하는 공간으로, 많은 이들이 찾고 사랑하는 장소입니다. 우리는 그 대릉원의 곡선과 고요한 아름다움을 모티브로 삼아, 마치 무릉도원에 온 듯한 휴양을 누릴 수 있는 공간을 설계하였습니다. 이런 과정을 통해 지은 이름이 바로 ‘구릉도원’이며 ‘경주다움’을 품은 휴식 공간이길 기대하였습니다."
+      },
+      "4": {
+        "x": 509,
+        "y": 1387,
+        "w": 421,
+        "h": 116,
+        "fontSize": 9.066,
+        "lineHeight": 14.506,
+        "renderText": "This lodging, nestled deep within the village, chose not to cut itself off from the outside with walls. Instead, it embraces a layered view of nature beyond its boundaries. When the door opens, gentle grassy mounds unfold, and the buildings arranged around the pool and courtyard are planned to share views with one another while still preserving privacy.\n​\n마을 깊숙이 자리한 이 숙소는 외부와의 경계를 담장으로 단절하는 대신, 담장 너머로 자연을 겹쳐보는 방식을 선택했습니다. 문을 열면 잔디 구릉이 부드럽게 이어지고, 수영장과 마당을 중심으로 배치된 건물들은 서로에게 시선을 내어주면서도 사적인 공간을 유지하도록 계획하였습니다."
+      },
+      "7": {
+        "x": 960,
+        "y": 1863,
+        "w": 430,
+        "h": 116,
+        "fontSize": 9.066,
+        "lineHeight": 14.506
+      }
+    },
+    "images": {
+      "a965e7_1347ecfa98e64d9c9d281c23c1f8a070~mv2.jpg": {
+        "x": 508,
+        "y": 687,
+        "w": 882,
+        "h": 563
+      },
+      "a965e7_dd409d5720ac4b0a91e277fdbdcb89d3~mv2.jpg": {
+        "x": 50,
+        "y": 1295,
+        "w": 439,
+        "h": 299
+      },
+      "a965e7_5a3c24af2c8344f2a962b77c3dfb86fc~mv2.jpg": {
+        "x": 951,
+        "y": 1295,
+        "w": 439,
+        "h": 299
+      },
+      "a965e7_de224acbd7be4cac8c000ea9d2b2a6b6~mv2.jpg": {
+        "x": 50,
+        "y": 1640,
+        "w": 882,
+        "h": 563
+      }
+    }
+  },
+  "navigation": {
+    "previous": "dorang-de-ville",
+    "next": "maemisong"
+  },
+  "mobileLayout": {
+    "texts": {
+      "3": 730,
+      "4": 1316,
+      "7": 1801
+    },
+    "images": {
+      "a965e7_1347ecfa98e64d9c9d281c23c1f8a070~mv2.jpg": 481,
+      "a965e7_dd409d5720ac4b0a91e277fdbdcb89d3~mv2.jpg": 1067,
+      "a965e7_5a3c24af2c8344f2a962b77c3dfb86fc~mv2.jpg": 1540,
+      "a965e7_de224acbd7be4cac8c000ea9d2b2a6b6~mv2.jpg": 2009
+    },
+    "heroWidth": 369,
+    "heroHeight": 207
+  }
 }

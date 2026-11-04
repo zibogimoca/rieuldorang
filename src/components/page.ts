@@ -2,9 +2,34 @@ import { element } from "./dom";
 import { projectIndex } from "../content/project-index";
 import type { Locale } from "../content/translations";
 
+type OriginalPosition = {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  fontSize?: number;
+  lineHeight?: number;
+  renderText?: string;
+};
 type OriginalPage = {
   text: string[];
   images: { source: string; alt: string; file: string }[];
+  visibleTextIndices?: number[];
+  navigation?: { previous?: string; next?: string };
+  mobileLayout?: {
+    texts: Record<string, number>;
+    images: Record<string, number>;
+    heroWidth?: number;
+    heroHeight?: number;
+  };
+  desktopLayout?: {
+    baseY: number;
+    height: number;
+    heroWidth: number;
+    heroHeight: number;
+    texts: Record<string, OriginalPosition>;
+    images: Record<string, OriginalPosition>;
+  };
 };
 const imported = import.meta.glob<OriginalPage>("../content/pages/*.json", {
   eager: true,
@@ -150,7 +175,20 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
     return main;
   }
   const hero = element("section", "original-detail-hero");
-  if (data.images[0]) hero.append(imageFor(data.images[0]));
+  if (data.images[0]) {
+    const heroImage = imageFor(data.images[0]);
+    if (data.desktopLayout)
+      heroImage.style.setProperty(
+        "--original-aspect",
+        `${data.desktopLayout.heroWidth} / ${data.desktopLayout.heroHeight}`,
+      );
+    if (data.mobileLayout?.heroWidth && data.mobileLayout.heroHeight)
+      heroImage.style.setProperty(
+        "--mobile-aspect",
+        `${data.mobileLayout.heroWidth} / ${data.mobileLayout.heroHeight}`,
+      );
+    hero.append(heroImage);
+  }
   const info = element("div", "original-detail-info");
   const name = element("div", "original-detail-name");
   data.text.slice(0, 2).forEach((text) => name.append(textBlock(text)));
@@ -159,20 +197,92 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   hero.append(info);
   main.append(hero);
   const content = element("section", "original-detail-content");
+  const layout = data.desktopLayout;
+  if (data.mobileLayout) content.dataset.mobileLayout = "true";
+  if (layout) {
+    content.dataset.originalLayout = "true";
+    content.style.setProperty("--original-height", `${layout.height / 14.4}vw`);
+  }
+  const placeAtOriginalPosition = (
+    node: HTMLElement,
+    position?: OriginalPosition,
+  ) => {
+    if (!layout) return;
+    if (!position) {
+      node.classList.add("original-layout-hidden");
+      return;
+    }
+    node.classList.add("original-layout-item");
+    node.style.setProperty(
+      "--original-left",
+      `${((position.x - 50) / 1340) * 100}%`,
+    );
+    node.style.setProperty(
+      "--original-top",
+      `${(position.y - layout.baseY) / 14.4}vw`,
+    );
+    node.style.setProperty("--original-width", `${(position.w / 1340) * 100}%`);
+    node.style.setProperty("--original-ratio", `${position.w} / ${position.h}`);
+    if (position.fontSize)
+      node.style.setProperty(
+        "--original-font-size",
+        `${position.fontSize / 14.4}vw`,
+      );
+    if (position.lineHeight)
+      node.style.setProperty(
+        "--original-line-height",
+        `${position.lineHeight / 14.4}vw`,
+      );
+  };
   const descriptions = element("div", "original-descriptions");
-  data.text
-    .slice(3)
-    .filter(
-      (text) =>
-        ![">", "<", "Project Gallery", "​>", "​<"].includes(text) &&
-        (slug === "ara-o-wall-house" ||
-          text !== "강력한 사생활 보호를 위한 가벽"),
-    )
-    .forEach((text) => descriptions.append(textBlock(text)));
+  const renderedText = new Set<string>();
+  data.text.slice(3).forEach((text, offset) => {
+    const desktopVisible =
+      !data.visibleTextIndices || data.visibleTextIndices.includes(offset + 3);
+    const mobilePosition = data.mobileLayout?.texts[String(offset + 3)];
+    const visible = desktopVisible || mobilePosition !== undefined;
+    if (
+      visible &&
+      ![
+        ">",
+        "<",
+        "Project Gallery",
+        "​>",
+        "​<",
+        "Projects",
+        "강력한 사생활 보호를 위한 가벽",
+      ].includes(text)
+    ) {
+      const position = layout?.texts[String(offset + 3)];
+      const signature = `${position?.x ?? ""}:${position?.y ?? ""}:${text.trim()}`;
+      if (renderedText.has(signature)) return;
+      renderedText.add(signature);
+      const block = textBlock(position?.renderText ?? text);
+      block.dataset.originalTextIndex = String(offset + 3);
+      if (data.mobileLayout) {
+        if (mobilePosition === undefined)
+          block.classList.add("original-mobile-hidden");
+        else block.style.setProperty("--mobile-order", String(mobilePosition));
+      }
+      if (!desktopVisible) block.classList.add("original-desktop-hidden");
+      placeAtOriginalPosition(block, position);
+      descriptions.append(block);
+    }
+  });
   const images = element("div", "original-detail-images");
   const inlineImages = data.images.slice(1).filter((item) => item.alt);
   const galleryImages = data.images.filter((item) => !item.alt);
-  inlineImages.forEach((item) => images.append(imageFor(item)));
+  inlineImages.forEach((item) => {
+    const image = imageFor(item);
+    image.dataset.originalImage = item.source;
+    if (data.mobileLayout) {
+      const order = data.mobileLayout.images[item.source];
+      if (order === undefined) image.classList.add("original-mobile-hidden");
+      else image.style.setProperty("--mobile-order", String(order));
+    }
+    placeAtOriginalPosition(image, layout?.images[item.source]);
+    images.append(image);
+  });
   content.append(descriptions, images);
   main.append(content);
   if (galleryImages.length) {
@@ -187,35 +297,37 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
           : `Project photograph ${index + 1}`;
       track.append(image);
     });
-    const controls = element("div", "original-gallery-controls");
-    for (const [direction, label] of [
-      [-1, "‹"],
-      [1, "›"],
-    ] as const) {
-      const button = element("button", "", label);
-      button.type = "button";
-      button.setAttribute(
-        "aria-label",
-        direction < 0
-          ? locale === "ko"
-            ? "이전 사진"
-            : "Previous photos"
-          : locale === "ko"
-            ? "다음 사진"
-            : "Next photos",
-      );
-      button.addEventListener("click", () =>
-        track.scrollBy({
-          left: direction * track.clientWidth * 0.7,
-          behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
-            ? "instant"
-            : "smooth",
-        }),
-      );
-      controls.append(button);
-    }
-    gallery.append(track, controls);
+    gallery.append(track);
     main.append(gallery);
+  }
+  if (data.navigation) {
+    const navigation = element("nav", "original-project-navigation");
+    navigation.setAttribute(
+      "aria-label",
+      locale === "ko" ? "프로젝트 이동" : "Project navigation",
+    );
+    if (data.navigation.previous) {
+      const link = element("a", "", "‹");
+      link.href = pageUrl(data.navigation.previous);
+      link.setAttribute(
+        "aria-label",
+        locale === "ko" ? "이전 프로젝트" : "Previous project",
+      );
+      navigation.append(link);
+    }
+    const all = element("a", "", "Projects");
+    all.href = pageUrl("projects-rieuldorang");
+    navigation.append(all);
+    if (data.navigation.next) {
+      const link = element("a", "", "›");
+      link.href = pageUrl(data.navigation.next);
+      link.setAttribute(
+        "aria-label",
+        locale === "ko" ? "다음 프로젝트" : "Next project",
+      );
+      navigation.append(link);
+    }
+    main.append(navigation);
   }
   if (locale === "en") main.lang = "en";
   return main;

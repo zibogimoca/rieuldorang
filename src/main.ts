@@ -166,9 +166,10 @@ function render(): void {
     const result = element("div", "home-news-column");
     for (const item of items) {
       const link = element("a", "home-news-card");
-      link.href = pageUrl(
-        item.href.endsWith("/stay-collection") ? "stay-collection" : "news",
-      );
+      const originalSite = "https://www.rieuldorang.com/";
+      link.href = item.href.startsWith(originalSite)
+        ? pageUrl(item.href.slice(originalSite.length))
+        : item.href;
       if (item.image) {
         const image = element("img");
         image.src =

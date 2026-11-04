@@ -104,5 +104,114 @@
       "alt": "",
       "file": "maemisong/18.png"
     }
-  ]
+  ],
+  "visibleTextIndices": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "desktopLayout": {
+    "baseY": 687,
+    "height": 2431,
+    "heroWidth": 879,
+    "heroHeight": 563,
+    "texts": {
+      "3": {
+        "x": 50,
+        "y": 824,
+        "w": 424,
+        "h": 288,
+        "fontSize": 9.0,
+        "lineHeight": 14.4,
+        "renderText": "In Geoje, there is a place called Maemiseong, built over more than twenty years by a single individual. The son of its builder wished to create a café that could support his father.\nWe began the design by treating the retaining wall as a key architectural element, inspired by the fact that Maemiseong itself was born from the rebuilding of a collapsed retaining wall. In the first proposal, visitors entered through a narrow, vertically proportioned corridor intended to evoke a sense of awe toward Maemiseong, while the exterior walls used the same materials as Maemiseong.\nHowever, after much hesitation, the client asked us to avoid a design that directly reproduced Maemiseong. He said that Maemiseong was his own work, and that the new building should become the architect’s work. Being asked to create a “work” felt deeply humbling, and it led us to reconsider where the design should begin.\n​\n거제에는 한 개인이 20년 넘게 쌓은 매미성이라는 곳이 있다. 그 매미성을 쌓은 분(이하 매미성주)의 아들이 아버지를 도울 수 있는 카페를 짓고자 했다.\n​무너진 옹벽을 다시 세우는 과정에서 매미성이 탄생했다는 점에 착안하여 옹벽을 중요한 건축적 요소로 간주하고 설계를 시작했다. 첫번째 계획안은 매미성에 대한 경외심이 발현되도록 좁고 높은 비례의 복도를 통해 실내로 들어오게끔 설계하였고 외벽은 매미성과 같은 재료를 적용했다.\n그러나 건축주는 긴 망설임 끝에 매미성을 직접적으로 반영한 디자인은 지양해달라고 요청했다. 매미성은 자신의 작품이고 신축하는 건물은 건축가의 작품이길 바란다고 했다. 건축가는 자신의 작업 결과를 작품이라 부르는 것도 어색해하는 마당에 작품을 만들어 달라니 황송하기 그지없다. 그렇다면 어떤 방향으로 설계를 시작해야 할지 다시 고민했다."
+      },
+      "6": {
+        "x": 964,
+        "y": 1467,
+        "w": 426,
+        "h": 216,
+        "fontSize": 9.0,
+        "lineHeight": 14.4,
+        "renderText": "Maemiseong may be understood as a personal creation in which civil engineering, architecture, and landscape are inseparably intertwined. From this, we arrived at the idea that the most respectful gesture an architect could offer to a non-architect was to create a memorial.\nFor more than twenty years, only three or four stones were added each day, and once the structure endured wind and rain, more stones were stacked again. In the gaps between those stone walls, naturally germinated trees and carefully planted ones survived over time, allowing Maemiseong to reach its present, organic state. Though its retaining walls were first raised in resistance to nature, the Maemiseong of today is the result of enduring wisely and ultimately living in harmony with nature.\n​\n매미성은 토목과 건축, 그리고 조경이 어우러진 개인의 작품이라 할만하다. 그렇다면 건축가 아닌 사람을 건축가가 가장 예우할 수 있는 기념관을 만들어야겠다는 생각에 이르렀다. 하루에 돌 3~4개 정도 쌓고 비바람을 견뎌내면 또 쌓는 방식으로 20년 넘게 지금까지 이어져 왔고 그 돌벽 틈에 자연 발아한 나무와 직접 심은 나무들이 오랜 시간 살아남아 자연스러운 매미성에 이르렀다고 한다. 자연에 맞서서 옹벽을 쌓았지만, 자연에 순응하며 슬기롭게 견뎌낸 것이 지금의 매미성이 된 것이다."
+      },
+      "7": {
+        "x": 509,
+        "y": 2071,
+        "w": 421,
+        "h": 216,
+        "fontSize": 9.0,
+        "lineHeight": 14.4,
+        "renderText": "The memorial for the builder of Maemiseong needed to embody the order of nature. When stones are stacked to form an arch, they begin to create space and move toward architecture. We adopted the arch as a symbolic element of Maemiseong, and introduced a skylight in a domed ceiling so that light could fall from above, evoking a sense of reverence reminiscent of the spiritual imagery of the Pantheon.\nThe spherical exterior was covered with planting soil and turf so that wild seeds carried by the surrounding environment could naturally take root and germinate. Just as the trees and grasses of Maemiseong came to life over time, the roof of this café-memorial was also intended to breathe with the same natural order.\n​\n매미성주의 기념관은 자연의 섭리가 담겨있어야 했다. 돌이 쌓여 아치를 이루면 공간이 되고 건축으로 나아가게 된다. 아치는 매미성을 상징하는 요소로 하고 돔 형태의 천장에서 빛을 내리는 천창을 두어 판테온의 종교적 심상을 경외심으로 가져오고자 했다. 구 형태의 외부에는 조경토를 쌓고 잔디 떼를 붙여서 주변에서 날아든 야생의 여러 씨앗이 발아할 수 있게 했다. 매미성의 나무와 풀들이 그러했듯 이 기념관 같은 카페 지붕에도 자연의 섭리가 살아 숨쉴 것이다.\n​"
+      },
+      "8": {
+        "x": 50,
+        "y": 2627,
+        "w": 424,
+        "h": 317,
+        "fontSize": 9.0,
+        "lineHeight": 14.4,
+        "renderText": "To make this attitude toward nature more symbolically visible, we introduced over two meters of both vertical and horizontal separation so that the memorial space on the second floor would appear to float above the first floor.\nThe first floor, organized as a horizontal space, was planned for a café and souvenir shop, while the domed space on the second floor was designed as a memorial hall for the builder of Maemiseong, with exhibition elements integrated into built-in bench seating.\nNear the end of the design process, concerns were raised that the space was too small. Because the site allowed expansion only in the longitudinal direction due to topographic constraints, the solution was to add a separate annex at the entrance site.\nMaemiseong is the result of one individual’s struggle with nature, and of the path ultimately chosen toward coexistence. In that sense, it may be one of the most natural documentaries of the relationship between humanity and nature. We hope that this same sense of natural vitality will continue to live and breathe within the newly built architecture.\n​\n이러한 자연을 대하는 태도가 담긴 공간이 보다 상징적으로 보여질 수 있게 하기위해 2미터 이상의 수직공간과 수평공간을 두어 2층의 기념공간이 1층에서 띄워져 보이게 했다. 수평공간인 1층은 기념품 판매와 카페 공간으로 활용하고 2층의 돔 공간에는 매미성주의 기념관이 될 수 있도록 전시대를 붙박이 벤치의자 형태로 만들었다.\n설계가 막바지에 이르렀을 때 공간이 좁다는 의견이 있었고 지형적 이유로 길이 방향으로만 면적을 늘일 수가 있어서 입구 대지에 별동을 추가하는 것으로 대안을 잡았다.\n매미성은 한 개인이 자연과의 사투에서 살아남아 서로 공존하는 길을 택하는 과정에서 나온 결과물이다. 어쩌면 인간과 자연의 관계에서 가장 자연스러운 다큐멘터리가 아닐까 하며 그 자연스러움이 새로 지어진 건물에도 살아 숨 쉴 수 있기를 기대한다."
+      }
+    },
+    "images": {
+      "a965e7_fbe0c6583ec348a8b0cf771b170d3889~mv2.png": {
+        "x": 506,
+        "y": 687,
+        "w": 884,
+        "h": 563
+      },
+      "a965e7_0d95131ad9ab43ef95c280cb7c3f0f61~mv2.png": {
+        "x": 50,
+        "y": 1295,
+        "w": 902,
+        "h": 559
+      },
+      "a965e7_21a637759cdf489e9542e2181e97d2da~mv2.png": {
+        "x": 50,
+        "y": 1900,
+        "w": 439,
+        "h": 559
+      },
+      "a965e7_83615265f5aa433898249b46a9bcdce5~mv2.png": {
+        "x": 951,
+        "y": 1900,
+        "w": 439,
+        "h": 559
+      },
+      "a965e7_4d4728b8799f49068b178041777cbf6e~mv2.png": {
+        "x": 506,
+        "y": 2505,
+        "w": 884,
+        "h": 563
+      }
+    }
+  },
+  "navigation": {
+    "previous": "gureung-dowon",
+    "next": "marea"
+  },
+  "mobileLayout": {
+    "texts": {
+      "3": 733,
+      "6": 1464,
+      "7": 2402,
+      "8": 3233
+    },
+    "images": {
+      "a965e7_fbe0c6583ec348a8b0cf771b170d3889~mv2.png": 481,
+      "a965e7_0d95131ad9ab43ef95c280cb7c3f0f61~mv2.png": 1222,
+      "a965e7_21a637759cdf489e9542e2181e97d2da~mv2.png": 1846,
+      "a965e7_83615265f5aa433898249b46a9bcdce5~mv2.png": 2776,
+      "a965e7_4d4728b8799f49068b178041777cbf6e~mv2.png": 2995
+    },
+    "heroWidth": 369,
+    "heroHeight": 225
+  }
 }
