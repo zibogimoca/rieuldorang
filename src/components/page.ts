@@ -57,7 +57,7 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   }
   if (slug === "projects-rieuldorang") {
     const gallery = element("div", "original-project-grid");
-    for (const { slug: project, thumbnailId } of projectIndex) {
+    for (const { slug: project, thumbnailId, subtitle } of projectIndex) {
       const item = originalPages[project];
       if (!item?.images[0]) continue;
       const link = element("a", "original-project-tile");
@@ -68,10 +68,10 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
         data.images.find((image) =>
           image.source.includes(thumbnailId ?? "__none__"),
         ) ?? item.images[0];
-      link.append(
-        imageFor(thumbnail),
-        element("span", "original-project-title", title),
-      );
+      const caption = element("span", "original-project-title");
+      caption.append(element("span", "", title));
+      if (subtitle) caption.append(element("small", "", subtitle));
+      link.append(imageFor(thumbnail), caption);
       gallery.append(link);
     }
     main.append(gallery);
