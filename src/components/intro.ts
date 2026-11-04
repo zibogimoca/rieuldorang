@@ -20,6 +20,10 @@ export function intro(locale: "ko" | "en"): HTMLElement {
   next.setAttribute("aria-label", locale === "ko" ? "다음 사진" : "Next images");
   previous.addEventListener("click", () => viewport.scrollBy({ left: -viewport.clientWidth * .5, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" }));
   next.addEventListener("click", () => viewport.scrollBy({ left: viewport.clientWidth * .5, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" }));
+  previous.hidden = true;
+  viewport.addEventListener("scroll", () => {
+    previous.hidden = viewport.scrollLeft < 2;
+  }, { passive: true });
   viewport.append(track);
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const timer = window.setInterval(() => {

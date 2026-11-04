@@ -512,6 +512,7 @@ nav a,
   height: clamp(350px, 55vh, 650px);
 }
 .intro-image {
+  min-width: 0;
   display: block;
   height: 100%;
   object-fit: cover;
@@ -931,3 +932,28 @@ nav a,
     font-size: 12px;
   }
 }
+
+.intro-arrow[hidden] { display: none; }
+
+/* 원본처럼 프로젝트 사진 위에 이름과 상세 링크를 표시합니다. */
+.building-visual { position: relative; }
+.building-caption { position: absolute; bottom: 12px; left: 12px; right: 12px; display: flex; justify-content: space-between; gap: 10px; padding: 8px 10px; border: 1px solid #fff; border-radius: 5px; background: #000b; color: #fff; font-size: 12px; }
+.building-card > h3, .building-card > .text-link { display: none; }
+@media (min-width: 701px) {
+  .building-column:first-child .building-card:nth-child(1) .building-visual { aspect-ratio: .93; }
+  .building-column:first-child .building-card:nth-child(2) .building-visual { aspect-ratio: 1.6; }
+  .building-column:first-child .building-card:nth-child(3) .building-visual { aspect-ratio: 1.13; }
+  .building-column:first-child .building-card:nth-child(4) .building-visual { aspect-ratio: .75; }
+  .building-column:nth-child(2) .building-card:nth-child(1) .building-visual { aspect-ratio: .71; }
+}
+
+.site-header nav > a { justify-content: center; flex: none; }
+.site-header nav > a > span { display: inline-block; transform-origin: center; white-space: nowrap; }
+.original-gallery { margin-top: 80px; }
+.original-gallery h2 { border-block: 1px solid #000; font-size: 16px; font-weight: 400; text-align: center; padding: 8px; margin-bottom: 28px; }
+.original-gallery-track { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; }
+.original-gallery-track::-webkit-scrollbar { display: none; }
+.original-gallery-track img { flex: 0 0 calc((100% - 56px) / 5); width: calc((100% - 56px) / 5); height: 270px; object-fit: cover; scroll-snap-align: start; }
+.original-gallery-controls { display: flex; justify-content: flex-end; gap: 8px; padding: 10px 0; }
+.original-gallery-controls button { width: 44px; height: 44px; border: 1px solid #000; background: #fff; color: #000; font-size: 24px; cursor: pointer; }
+@media (max-width: 700px) { .original-gallery-track img { flex-basis: 75%; width: 75%; height: 240px; } }

@@ -29,6 +29,11 @@ export function buildingList(
       image.alt = building.image.alt;
       image.loading = "lazy";
       visual.append(image);
+      if (building.href) {
+        const caption = element("span", "building-caption");
+        caption.append(element("span", "", building.name), element("span", "", `${linkLabel} ›`));
+        visual.append(caption);
+      }
     } else {
       visual.setAttribute("aria-hidden", "true");
       visual.append(element("span", "architectural-form"));

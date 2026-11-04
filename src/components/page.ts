@@ -169,12 +169,34 @@ export function originalPage(slug: string, locale: Locale): HTMLElement | null {
   const descriptions = element("div", "original-descriptions");
   data.text
     .slice(3)
-    .filter((text) => text !== ">" && text !== "Project Gallery")
+    .filter((text) => ![">", "<", "Project Gallery", "​>", "​<"].includes(text) && (slug === "ara-o-wall-house" || text !== "강력한 사생활 보호를 위한 가벽"))
     .forEach((text) => descriptions.append(textBlock(text)));
   const images = element("div", "original-detail-images");
-  data.images.slice(1).forEach((item) => images.append(imageFor(item)));
+  const inlineImages = data.images.slice(1).filter(item => item.alt);
+  const galleryImages = data.images.filter(item => !item.alt);
+  inlineImages.forEach((item) => images.append(imageFor(item)));
   content.append(descriptions, images);
   main.append(content);
+  if (galleryImages.length) {
+    const gallery = element("section", "original-gallery");
+    gallery.append(element("h2", "", "Project Gallery"));
+    const track = element("div", "original-gallery-track");
+    galleryImages.forEach((item, index) => {
+      const image = imageFor(item);
+      image.alt = locale === "ko" ? `프로젝트 사진 ${index + 1}` : `Project photograph ${index + 1}`;
+      track.append(image);
+    });
+    const controls = element("div", "original-gallery-controls");
+    for (const [direction, label] of [[-1, "‹"], [1, "›"]] as const) {
+      const button = element("button", "", label);
+      button.type = "button";
+      button.setAttribute("aria-label", direction < 0 ? (locale === "ko" ? "이전 사진" : "Previous photos") : (locale === "ko" ? "다음 사진" : "Next photos"));
+      button.addEventListener("click", () => track.scrollBy({left: direction * track.clientWidth * .7, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"}));
+      controls.append(button);
+    }
+    gallery.append(track, controls);
+    main.append(gallery);
+  }
   if (locale === "en") main.lang = "en";
   return main;
 }

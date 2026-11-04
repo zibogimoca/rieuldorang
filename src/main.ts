@@ -9,6 +9,8 @@ import { buildingList } from "./components/building-list";
 import { element } from "./components/dom";
 import { intro as createIntro } from "./components/intro";
 import { originalPage, originalPages, pageUrl } from "./components/page";
+import { footer as createFooter } from "./components/footer";
+import { initializeHeaderDock } from "./components/header-dock";
 
 import { translations, type Locale } from "./content/translations";
 
@@ -47,7 +49,8 @@ function render(): void {
     [t.news, pageUrl("news")],
     [t.contact, pageUrl("contact")],
   ]) {
-    const link = element("a", "", text);
+    const link = element("a");
+    link.append(element("span", "", text));
     link.href = href;
     nav.append(link);
   }
@@ -75,21 +78,14 @@ function render(): void {
   }
   nav.append(language);
   header.append(logo, nav);
+  const disposeDock = initializeHeaderDock(nav);
   const slug = location.pathname
     .replace(import.meta.env.BASE_URL, "")
     .replace(/^\/+|\/+$/g, "");
   if (slug && originalPages[slug]) {
     const page = originalPage(slug, locale)!;
-    const footer = element("footer", "site-footer");
-    footer.append(
-      element("strong", "logo", site.name),
-      element(
-        "p",
-        "",
-        `© ${new Date().getFullYear()} Rieuldorang. All Rights Reserved.`,
-      ),
-    );
-    app.append(skip, header, page, footer);
+    app.append(skip, header, page, createFooter(locale));
+    disposeMotion = disposeDock;
     return;
   }
   const main = element("main");
@@ -188,16 +184,8 @@ function render(): void {
     journal.append(link);
   }
   main.append(hero, spaces, about, journal);
-  const footer = element("footer", "site-footer");
-  footer.append(
-    element("strong", "logo", site.name),
-    element(
-      "p",
-      "",
-      `© ${new Date().getFullYear()} Rieuldorang. All Rights Reserved.`,
-    ),
-  );
-  app.append(skip, header, main, footer);
-  disposeMotion = initializeMotion();
+  app.append(skip, header, main, createFooter(locale));
+  const disposePageMotion = initializeMotion();
+  disposeMotion = () => { disposePageMotion(); disposeDock(); };
 }
 render();
