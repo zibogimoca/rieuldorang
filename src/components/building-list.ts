@@ -6,18 +6,26 @@ export function buildingList(
   linkLabel: string,
 ): HTMLElement {
   const grid = element("div", "building-grid");
+  const columns = [
+    element("div", "building-column"),
+    element("div", "building-column"),
+  ];
   for (const [index, building] of items
     .filter((item) => item.published)
     .entries()) {
     const card = element("article", "building-card");
-    const visual = element(building.href ? "a" : "div", `building-visual visual-${index % 2}`);
+    const visual = element(
+      building.href ? "a" : "div",
+      `building-visual visual-${index % 2}`,
+    );
     if (visual instanceof HTMLAnchorElement && building.href) {
       visual.href = building.href;
       visual.setAttribute("aria-label", `${building.name} — ${linkLabel}`);
     }
     if (building.image) {
       const image = element("img");
-      image.src = import.meta.env.BASE_URL + building.image.src.replace(/^\//, '');
+      image.src =
+        import.meta.env.BASE_URL + building.image.src.replace(/^\//, "");
       image.alt = building.image.alt;
       image.loading = "lazy";
       visual.append(image);
@@ -42,8 +50,11 @@ export function buildingList(
       link.setAttribute("aria-label", `${building.name} — ${linkLabel}`);
       card.append(link);
     } else card.append(details);
-    grid.append(card);
+    columns[index < 4 ? 0 : 1].append(card);
   }
+  columns.forEach((column) => {
+    if (column.childElementCount) grid.append(column);
+  });
   if (!grid.childElementCount)
     grid.append(element("p", "", "새로운 공간 이야기를 준비하고 있습니다."));
   return grid;
