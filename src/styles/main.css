@@ -1339,32 +1339,46 @@ nav a,
 }
 .site-footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  margin: 0;
-  padding: 10px 3.5vw;
-  text-align: center;
+  flex-direction: row;
+  align-items: end;
+  gap: 32px;
+  margin: 56px 3.5vw 0;
+  padding: 24px 0 30px;
+  text-align: left;
+  border-top: 1px solid #111;
 }
 .footer-identity .logo {
-  font-size: 48px;
+  font-size: 18px;
   line-height: 1.1;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-weight: 500;
+  letter-spacing: .12em;
 }
 .footer-identity p {
-  margin: 4px 0;
+  margin: 9px 0 0;
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: #666;
 }
 .footer-nav {
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 22px;
+  margin-left: auto;
+  font-size: 10px;
+  letter-spacing: .14em;
 }
 @media (max-width: 700px) {
   .site-footer {
-    margin: 0;
-    align-items: center;
+    margin: 44px 5vw 0;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
   }
   .footer-identity .logo {
-    font-size: 32px;
+    font-size: 16px;
+  }
+  .footer-nav {
+    margin-left: 0;
+    gap: 18px;
   }
 }
 /* 원본 모바일: 인트로 사진과 전체 프로젝트를 한 장씩 보여줍니다. */
