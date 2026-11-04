@@ -1,0 +1,181 @@
+/* 화면 크기를 고정하고 주변 레이아웃을 움직이지 않는 모션을 적용합니다. */
+.hero h1 {
+  overflow: hidden;
+}
+.language-switch {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-left: 12px;
+}
+.language-switch button {
+  border: 0;
+  padding: 3px 0;
+  font: inherit;
+  color: var(--muted);
+  background: none;
+  cursor: pointer;
+}
+.language-switch button[aria-pressed="true"] {
+  color: #25251f;
+  box-shadow: 0 1px currentColor;
+}
+.language-switch button:focus-visible {
+  outline: 2px solid #9d552c;
+  outline-offset: 4px;
+}
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #7e8469;
+  transform-origin: left;
+  z-index: 20;
+  pointer-events: none;
+}
+.project-cursor {
+  position: fixed;
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8f7f3e8;
+  color: #25251f;
+  font-size: 27px;
+  pointer-events: none;
+  z-index: 30;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  transition:
+    opacity 250ms,
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.project-cursor.is-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 span {
+    animation: title-unfold 1400ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero h1 span:nth-child(2) {
+    animation-delay: 160ms;
+  }
+  .hero h1 span:nth-child(3) {
+    animation-delay: 320ms;
+  }
+  .hero-description {
+    animation: introduction-arrive 1200ms 650ms both;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition:
+      opacity 1100ms ease,
+      transform 1400ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  .building-visual {
+    clip-path: inset(0 0 0 0);
+  }
+  .reveal .building-visual {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1500ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible .building-visual {
+    clip-path: inset(0 0 0 0);
+  }
+  .building-visual img {
+    transform: scale(1.09);
+    transition: transform 1700ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .is-visible .building-visual img {
+    transform: scale(1);
+  }
+  .building-card:nth-child(2) {
+    transition-delay: 140ms;
+  }
+  .building-card:nth-child(2) .building-visual {
+    transition-delay: 140ms;
+  }
+  @media (hover: hover) {
+    .building-card:hover .building-visual img {
+      transform: scale(1.055);
+    }
+  }
+  .text-link {
+    position: relative;
+    border-bottom: 0;
+  }
+  .text-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform-origin: right;
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .text-link:hover {
+    text-decoration: none;
+  }
+  .text-link:hover::after {
+    transform: scaleX(0.3);
+  }
+}
+@keyframes title-unfold {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(55px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+@keyframes introduction-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .project-cursor,
+  .reading-progress {
+    display: none;
+  }
+}
+@media (pointer: coarse) {
+  .project-cursor {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .language-switch {
+    margin-left: 0;
+    gap: 7px;
+  }
+}
