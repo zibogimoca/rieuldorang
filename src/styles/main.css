@@ -1060,12 +1060,27 @@ nav a,
   font-size: 13px;
 }
 .intro-captions span {
-  font-size: 16px;
+  font-size: 12px;
 }
 @media (min-width: 701px) {
   #spaces .section-heading h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
+}
+/* Restrained type scale: keep equivalent labels and headings at consistent sizes. */
+.section h2,
+.original-news > h1 { font-size: 22px; letter-spacing: .02em; }
+.original-gallery h2,
+.original-bio-heading .original-text { font-size: 16px; }
+.building-card > h3,
+.original-news-copy h2 { font-size: 13px; }
+.site-header nav > a { font-size: 11px; letter-spacing: .12em; }
+.intro-captions span { font-size: 11px; letter-spacing: .14em; }
+@media (max-width: 700px) {
+  .section h2,
+  .original-news > h1 { font-size: 20px; }
+  .original-gallery h2,
+  .original-bio-heading .original-text { font-size: 15px; }
 }
 @media (max-width: 700px) {
   .site-header nav > a {
