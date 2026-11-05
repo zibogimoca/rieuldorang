@@ -1873,3 +1873,29 @@ body { overflow-x: hidden; background: #fff; color: #1d1d1f; }
  .original-detail-content[data-original-layout] .original-layout-item { position: static; top: auto; left: auto; width: 100%; margin: 0; }
  .original-detail-content[data-original-layout] img.original-layout-item { height: auto; aspect-ratio: auto; }
 }
+
+/* Remove legacy nav treatments everywhere; keep one lightweight Apple-like chrome. */
+.site-header { position: sticky; top: 0; z-index: 100; height: 54px; margin: 0; padding: 0 max(24px, calc((100vw - 1200px)/2)); background: rgba(245,245,247,.88); border: 0; backdrop-filter: saturate(180%) blur(18px); }
+.site-header nav { border: 0 !important; border-radius: 0 !important; padding: 0 !important; background: transparent !important; backdrop-filter: none !important; box-shadow: none !important; gap: 30px; }
+.site-header nav a, .site-header nav button { min-height: 0; height: auto; padding: 0; border: 0 !important; border-radius: 0 !important; background: transparent !important; color: #1d1d1f; font-size: 11px; font-weight: 400; letter-spacing: 0; text-shadow: none; }
+.site-header nav a::before, .site-header nav a::after { content: none !important; }
+.site-header nav a:hover { color: #06c; text-decoration: none; }
+.original-detail-content[data-original-layout] { position: static; height: auto !important; display: grid; grid-template-columns: minmax(220px,.75fr) minmax(0,1.25fr); gap: 8vw; padding: 0 36px; }
+.original-detail-content[data-original-layout] .original-descriptions { position: static; display: flex; flex-direction: column; gap: 18px; }
+.original-detail-content[data-original-layout] .original-detail-images { position: static; display: flex; flex-direction: column; gap: 24px; padding: 0; }
+.original-detail-content[data-original-layout] .original-layout-item { position: static !important; top: auto !important; left: auto !important; width: 100% !important; height: auto; margin: 0 !important; }
+.original-detail-content[data-original-layout] .original-layout-hidden { display: none !important; }
+.original-detail-content[data-original-layout] .original-text { max-width: 48ch; color: #6e6e73; font-size: 14px; line-height: 1.75; }
+.original-contact .original-text { width: auto; max-width: 44ch; padding: 0; border: 0; border-radius: 0; text-align: left; color: #1d1d1f; font-size: clamp(22px,3vw,36px); line-height: 1.45; }
+.original-contact { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.original-about-us > .original-text { max-width: 70ch; margin: 24px auto; font-size: 15px; line-height: 1.8; color: #6e6e73; }
+.original-news-row, .original-project-tile, .original-about-top, .original-detail-hero { box-shadow: none; }
+.original-project-navigation { border-color: #d2d2d7; }
+@media (max-width: 700px) {
+ .site-header { height: 48px; padding: 0 14px; }
+ .site-header nav { gap: 14px; }
+ .site-header nav a { font-size: 10px; }
+ .original-detail-content[data-original-layout] { display: flex; flex-direction: column; gap: 28px; height: auto !important; padding: 0 4px; }
+ .original-detail-content[data-original-layout] .original-descriptions, .original-detail-content[data-original-layout] .original-detail-images { display: flex; width: 100%; }
+ .original-detail-content[data-original-layout] .original-layout-item { position: static !important; width: 100% !important; margin: 0 !important; }
+}
