@@ -14,8 +14,7 @@ import { initializeHeaderDock } from "./components/header-dock";
 
 import { translations, type Locale } from "./content/translations";
 
-let locale: Locale =
-  new URLSearchParams(location.search).get("lang") === "en" ? "en" : "ko";
+const locale: Locale = "ko";
 
 let disposeMotion = () => {};
 
@@ -54,29 +53,6 @@ function render(): void {
     link.href = href;
     nav.append(link);
   }
-  const language = element("div", "language-switch");
-  language.setAttribute("role", "group");
-  language.setAttribute("aria-label", t.language);
-  for (const [code, label] of [
-    ["ko", "KO"],
-    ["en", "EN"],
-  ] as const) {
-    const button = element("button", "", label);
-    button.type = "button";
-    button.setAttribute("aria-pressed", String(locale === code));
-    button.addEventListener("click", () => {
-      locale = code;
-      const url = new URL(location.href);
-      url.searchParams.set("lang", code);
-      history.replaceState(null, "", url);
-      render();
-      document
-        .querySelector<HTMLButtonElement>(`button[aria-pressed="true"]`)
-        ?.focus({ preventScroll: true });
-    });
-    language.append(button);
-  }
-  nav.append(language);
   header.append(logo, nav);
   const disposeDock = initializeHeaderDock(nav);
   const slug = location.pathname
@@ -97,10 +73,7 @@ function render(): void {
   const heading = element("div", "section-heading");
   heading.append(element("h2", "", "Recent Projects"));
   const intro = element("div", "section-intro");
-  intro.append(
-    element("p", "", site.projectsIntro),
-    element("p", "", site.projectsIntroKo),
-  );
+  intro.append(element("p", "", `${site.projectsIntro} — ${site.projectsIntroKo}`));
   heading.append(intro);
   const all = element("a", "text-link section-link", `${t.all} ↗`);
   all.href = pageUrl("projects-rieuldorang");
