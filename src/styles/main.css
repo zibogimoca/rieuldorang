@@ -301,6 +301,71 @@ nav {
   }
 }
 
+/* Rebuilt home: cinematic lead image followed by a numbered project portfolio. */
+.site-header { position: absolute; top: 0; left: 0; right: 0; z-index: 30; margin: 0; padding: 20px 5vw; border: 0; color: #fff; }
+.site-header .logo-image { filter: brightness(0) invert(1); }
+.site-header nav a { color: #fff; text-shadow: 0 1px 10px #0005; }
+.hero { position: relative; margin: 0; padding: 0; }
+.intro-wrapper { position: relative; }
+.intro-viewport { width: 100%; }
+.intro-track { height: min(90vh, 940px); }
+.intro-image, .intro-image-wide, .intro-image-narrow { flex-basis: 100%; }
+.intro-photo { object-position: center 55%; }
+.intro-featureline { position: absolute; z-index: 3; left: 8vw; right: 8vw; bottom: 12vh; display: grid; grid-template-columns: 1fr auto; align-items: end; color: #fff; pointer-events: none; }
+.intro-feature-index { grid-column: 1 / -1; margin-bottom: 16px; font-size: 10px; letter-spacing: .22em; }
+.intro-feature-title { max-width: 760px; font-size: clamp(34px, 6vw, 78px); font-weight: 400; line-height: .98; letter-spacing: -.045em; }
+.intro-feature-link { padding-bottom: 8px; font-size: 9px; letter-spacing: .17em; }
+.intro-captions { position: absolute; z-index: 3; bottom: 20px; left: 8vw; right: 8vw; margin: 0; color: #fff; }
+.intro-captions span { color: inherit; }
+#spaces { padding: 120px 8vw 130px; }
+#spaces .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; margin: 0 0 72px; }
+#spaces .section-heading h2 { grid-column: 1; white-space: pre-line; max-width: 460px; font-size: clamp(32px, 4vw, 56px); line-height: .98; letter-spacing: -.04em; text-transform: none; }
+#spaces .section-heading h2::before { content: "SELECTED WORK / 01—07"; display: block; margin-bottom: 26px; font-size: 9px; letter-spacing: .2em; color: #777; }
+#spaces .section-intro { grid-column: 2; grid-row: 1; align-self: end; max-width: 440px; font-size: 14px; line-height: 1.75; }
+#spaces .folio-kicker { display: none; }
+#spaces .section-intro p + p { margin-top: 18px; color: #777; font-size: 12px; }
+#spaces .building-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 60px 18px; }
+#spaces .building-column { display: contents; }
+#spaces .building-card { grid-column: span 5; margin: 0; }
+#spaces .building-card:nth-child(4n + 2), #spaces .building-card:nth-child(4n + 3) { grid-column: span 7; }
+#spaces .building-card-featured { grid-column: 1 / -1; margin-bottom: 52px; }
+#spaces .building-card-featured .building-visual { aspect-ratio: 1.9; }
+#spaces .building-card:nth-child(3n) { margin-top: 90px; }
+#spaces .building-card-featured:nth-child(3n) { margin-top: 0; }
+#spaces .building-visual { aspect-ratio: 1.18; }
+#spaces .building-caption { position: static; display: flex; margin: 12px 0 0; padding: 0; color: #111; background: none; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+#spaces .building-card h3 { display: block; margin: 5px 0 0; color: #777; font-size: 11px; font-weight: 400; }
+#spaces .building-card > .eyebrow, #spaces .building-card > .summary, #spaces .building-card > .text-link { display: none; }
+#spaces .section-link { display: block; width: fit-content; margin: 74px auto 0; font-size: 10px; letter-spacing: .18em; }
+.about { padding: 100px 14vw; border-color: #ddd; }
+.news { padding: 100px 8vw; }
+.home-news-columns { grid-template-columns: 1fr 1.1fr 1fr; gap: 4vw; }
+.site-footer { margin: 0 5vw; }
+@media (max-width: 700px) {
+  .site-header { padding: 16px 5vw; }
+  .site-header .logo-image { filter: none; }
+  .site-header nav a { color: #111; text-shadow: none; }
+  .intro-track { height: 82svh; min-height: 560px; }
+  .intro-featureline { left: 6vw; right: 6vw; bottom: 11vh; display: block; }
+  .intro-feature-index { margin-bottom: 14px; }
+  .intro-feature-title { font-size: clamp(38px, 11vw, 58px); }
+  .intro-feature-link { display: block; margin-top: 20px; }
+  .intro-captions { left: 6vw; right: 6vw; bottom: 12px; }
+  .intro-captions span { font-size: 8px; letter-spacing: .12em; }
+  #spaces { padding: 72px 6vw 76px; }
+  #spaces .section-heading { display: block; margin-bottom: 38px; }
+  #spaces .section-heading h2 { font-size: 40px; margin-bottom: 22px; }
+  #spaces .section-heading h2::before { margin-bottom: 18px; }
+  #spaces .section-intro { font-size: 13px; }
+  #spaces .building-grid { grid-template-columns: 1fr; gap: 34px; }
+  #spaces .building-card, #spaces .building-card:nth-child(n), #spaces .building-card-featured { grid-column: auto; margin: 0; }
+  #spaces .building-card-featured .building-visual, #spaces .building-visual { aspect-ratio: 1.12; }
+  #spaces .building-card:nth-child(even) { width: 88%; margin-left: auto; }
+  #spaces .section-link { margin-top: 38px; }
+  .about, .news { padding: 64px 7vw; }
+  .home-news-columns { grid-template-columns: 1fr 1fr; }
+}
+
 /* 인트로는 원본의 세 이미지와 키워드 구성을 유지합니다. */
 .visually-hidden {
   position: absolute;

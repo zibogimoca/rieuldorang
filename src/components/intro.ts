@@ -89,6 +89,12 @@ export function intro(locale: "ko" | "en"): HTMLElement {
   ["CREATIVE", "DIFFERENT", "TIMELESS"].forEach((word) =>
     captions.append(element("span", "", word)),
   );
-  section.append(title, gallery, captions);
+  const feature = element("div", "intro-featureline");
+  feature.append(
+    element("span", "intro-feature-index", "01 / RI EUL DORANG"),
+    element("span", "intro-feature-title", "Architecture shaped by light."),
+    element("a", "intro-feature-link", "SCROLL TO EXPLORE ↓"),
+  );
+  section.append(title, gallery, feature, captions);
   return section;
 }

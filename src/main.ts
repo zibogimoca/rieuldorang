@@ -70,12 +70,19 @@ function render(): void {
   const hero = createIntro(locale);
   const spaces = element("section", "section");
   spaces.id = "spaces";
+  spaces.classList.add("folio-section");
   const heading = element("div", "section-heading");
-  heading.append(element("h2", "", "Recent Projects"));
+  heading.append(
+    element("p", "folio-kicker", "SELECTED WORK / 2018—2025"),
+    element("h2", "", "Built around\nthe way we live."),
+  );
   const intro = element("div", "section-intro");
-  intro.append(element("p", "", `${site.projectsIntro} — ${site.projectsIntroKo}`));
+  intro.append(
+    element("p", "folio-lead", site.projectsIntro),
+    element("p", "folio-korean", site.projectsIntroKo),
+  );
   heading.append(intro);
-  const all = element("a", "text-link section-link", `${t.all} ↗`);
+  const all = element("a", "text-link section-link", "VIEW ALL PROJECTS ↗");
   all.href = pageUrl("projects-rieuldorang");
   spaces.append(
     heading,

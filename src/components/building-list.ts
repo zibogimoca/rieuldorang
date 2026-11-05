@@ -6,10 +6,6 @@ export function buildingList(
   linkLabel: string,
 ): HTMLElement {
   const grid = element("div", "building-grid");
-  const columns = [
-    element("div", "building-column"),
-    element("div", "building-column"),
-  ];
   for (const [index, building] of items
     .filter((item) => item.published)
     .entries()) {
@@ -55,11 +51,9 @@ export function buildingList(
       link.setAttribute("aria-label", `${building.name} — ${linkLabel}`);
       card.append(link);
     } else card.append(details);
-    columns[index < 4 ? 0 : 1].append(card);
+    card.classList.toggle("building-card-featured", index === 0);
+    grid.append(card);
   }
-  columns.forEach((column) => {
-    if (column.childElementCount) grid.append(column);
-  });
   if (!grid.childElementCount)
     grid.append(element("p", "", "새로운 공간 이야기를 준비하고 있습니다."));
   return grid;
