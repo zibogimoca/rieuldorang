@@ -1039,8 +1039,17 @@ nav a,
 }
 
 :root {
-  /* Original Wix pages use Arial/Helvetica; keep one quiet type family throughout. */
-  font-family: Arial, Helvetica, "Noto Sans KR", sans-serif;
+  /* Manrope gives English labels a clean architectural feel; Korean falls back naturally. */
+  font-family: "Manrope", "Noto Sans KR", Arial, sans-serif;
+}
+.site-header nav > a,
+.intro-captions span,
+.footer-nav,
+.footer-identity .logo,
+.section h2,
+.original-gallery h2 {
+  font-family: "Manrope", "Noto Sans KR", Arial, sans-serif;
+  font-weight: 400;
 }
 .site-header nav > a {
   letter-spacing: 0.2em;
