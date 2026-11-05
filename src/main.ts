@@ -45,6 +45,7 @@ function render(): void {
   nav.setAttribute("aria-label", t.menu);
   for (const [text, href] of [
     [t.projects, pageUrl("projects-rieuldorang")],
+    ["Studio", pageUrl("about-us")],
     [t.news, pageUrl("news")],
     [t.contact, pageUrl("contact")],
   ]) {

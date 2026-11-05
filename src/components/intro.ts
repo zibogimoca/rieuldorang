@@ -38,7 +38,7 @@ export function intro(locale: "ko" | "en"): HTMLElement {
   );
   previous.addEventListener("click", () =>
     viewport.scrollBy({
-      left: -viewport.clientWidth * 0.5,
+      left: -viewport.clientWidth,
       behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
         ? "instant"
         : "smooth",
@@ -46,7 +46,7 @@ export function intro(locale: "ko" | "en"): HTMLElement {
   );
   next.addEventListener("click", () =>
     viewport.scrollBy({
-      left: viewport.clientWidth * 0.5,
+      left: viewport.clientWidth,
       behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
         ? "instant"
         : "smooth",
@@ -79,10 +79,10 @@ export function intro(locale: "ko" | "en"): HTMLElement {
       left:
         viewport.scrollLeft >= end - 2
           ? 0
-          : Math.min(end, viewport.scrollLeft + viewport.clientWidth * 0.25),
+          : Math.min(end, viewport.scrollLeft + viewport.clientWidth),
       behavior: "smooth",
     });
-  }, 5000);
+  }, 6500);
   const gallery = element("div", "intro-wrapper");
   gallery.append(viewport, previous, next);
   const captions = element("div", "intro-captions");
@@ -95,6 +95,17 @@ export function intro(locale: "ko" | "en"): HTMLElement {
     element("span", "intro-feature-title", "Architecture shaped by light."),
     element("a", "intro-feature-link", "SCROLL TO EXPLORE ↓"),
   );
-  section.append(title, gallery, feature, captions);
+  const count = element("span", "intro-slide-count", "01 / 06");
+  const progress = element("div", "intro-slide-progress");
+  const progressFill = element("span");
+  progress.append(progressFill);
+  viewport.addEventListener("scroll", () => {
+    const current = Math.round(viewport.scrollLeft / Math.max(1, viewport.clientWidth));
+    count.textContent = `${String(current + 1).padStart(2, "0")} / 06`;
+    progressFill.style.width = `${((current + 1) / sources.length) * 100}%`;
+    previous.hidden = current === 0;
+    next.hidden = current >= sources.length - 1;
+  }, { passive: true });
+  section.append(title, gallery, feature, captions, count, progress);
   return section;
 }
