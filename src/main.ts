@@ -11,7 +11,6 @@ import { intro as createIntro } from "./components/intro";
 import { originalPage, originalPages, pageUrl } from "./components/page";
 import { footer as createFooter } from "./components/footer";
 import { initializeHeaderDock } from "./components/header-dock";
-import { initializeTitleFlip } from "./components/title-flip";
 
 import { translations, type Locale } from "./content/translations";
 
@@ -86,7 +85,6 @@ function render(): void {
   if (slug && originalPages[slug]) {
     const page = originalPage(slug, locale)!;
     app.append(skip, header, page, createFooter(locale));
-    initializeTitleFlip();
     disposeMotion = disposeDock;
     return;
   }
@@ -207,7 +205,6 @@ function render(): void {
   journal.append(newsColumns, allNews);
   main.append(hero, spaces, about, journal);
   app.append(skip, header, main, createFooter(locale));
-  initializeTitleFlip();
   const disposePageMotion = initializeMotion();
   disposeMotion = () => {
     disposePageMotion();
