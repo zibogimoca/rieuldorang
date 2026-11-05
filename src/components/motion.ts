@@ -15,7 +15,7 @@ export function initializeMotion(): () => void {
   );
   document
     .querySelectorAll<HTMLElement>(
-      ".section-heading, .building-card, .about, .news > h2, .news-item",
+      ".section-heading, .building-card, .about, .news > h2, .news-item, .original-project-tile, .original-news-row, .original-about-top, .original-gallery-track img",
     )
     .forEach((target) => {
       target.classList.add("reveal");

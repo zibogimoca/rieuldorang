@@ -160,6 +160,11 @@
 @keyframes folio-image-settle { from { opacity: .72; transform: scale(1.035); } to { opacity: 1; transform: scale(1); } }
 @keyframes folio-image-drift { from { transform: scale(1); } to { transform: scale(1.035); } }
 @keyframes folio-type-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .original-project-tile.reveal, .original-news-row.reveal, .original-about-top.reveal, .original-gallery-track img.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .75s cubic-bezier(.2,.65,.25,1); }
+  .original-project-tile.reveal.is-visible, .original-news-row.reveal.is-visible, .original-about-top.reveal.is-visible, .original-gallery-track img.reveal.is-visible { opacity: 1; transform: none; }
+}
 @media (max-width: 700px) {
   nav {
     gap: 12px;
