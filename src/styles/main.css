@@ -366,6 +366,21 @@ nav {
   .home-news-columns { grid-template-columns: 1fr 1fr; }
 }
 
+/* Navigation is a compact folio index; all controls use the same baseline. */
+.site-header { position: relative; inset: auto; display: flex; height: 72px; align-items: center; padding: 0 5vw; background: #fff; }
+.site-header .logo-image { filter: none; }
+.site-header nav { display: flex; gap: 0; align-items: center; }
+.site-header nav a { display: flex; align-items: center; gap: 9px; min-height: 42px; padding: 0 18px; border-left: 1px solid #ddd; color: #111; font-size: 9px; letter-spacing: .12em; text-shadow: none; }
+.site-header nav a::before { content: "0" counter(folio-nav); color: #999; font-size: 8px; letter-spacing: 0; }
+.site-header nav { counter-reset: folio-nav; }
+.site-header nav a { counter-increment: folio-nav; }
+.site-header nav a:hover { color: #d20a19; text-decoration: none; }
+.site-header nav a:last-child::after { content: "↗"; color: #d20a19; }
+@media (max-width: 700px) {
+  .site-header { height: 62px; }
+  .site-header nav a { min-height: 34px; padding-inline: 8px; gap: 5px; font-size: 8px; }
+}
+
 /* 인트로는 원본의 세 이미지와 키워드 구성을 유지합니다. */
 .visually-hidden {
   position: absolute;

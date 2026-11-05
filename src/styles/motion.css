@@ -144,6 +144,22 @@
     display: none;
   }
 }
+
+/* New folio motion: quiet image drift, clean cuts and restrained stagger. */
+@media (prefers-reduced-motion: no-preference) {
+  .intro-photo { animation: folio-image-settle 1.8s cubic-bezier(.2,.65,.25,1) both, folio-image-drift 16s ease-in-out 1.8s infinite alternate; }
+  .intro-feature-index, .intro-feature-title, .intro-feature-link { opacity: 0; animation: folio-type-in .8s cubic-bezier(.2,.65,.25,1) forwards; }
+  .intro-feature-title { animation-delay: .18s; }
+  .intro-feature-link { animation-delay: .34s; }
+  .building-card.reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .8s cubic-bezier(.2,.65,.25,1); }
+  .building-card.reveal.is-visible { opacity: 1; transform: none; }
+  .building-card.reveal:nth-child(even) { transition-delay: .12s; }
+  .building-visual img { transition: transform 1s cubic-bezier(.2,.65,.25,1); }
+  .building-visual:hover img { transform: scale(1.025); }
+}
+@keyframes folio-image-settle { from { opacity: .72; transform: scale(1.035); } to { opacity: 1; transform: scale(1); } }
+@keyframes folio-image-drift { from { transform: scale(1); } to { transform: scale(1.035); } }
+@keyframes folio-type-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 700px) {
   nav {
     gap: 12px;
