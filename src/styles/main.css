@@ -4,8 +4,8 @@
   background: #ffffff;
   font-synthesis: none;
   line-height: 1.7;
-  --line: #000000;
-  --muted: #000000;
+  --line: #b8b8b8;
+  --muted: #666666;
 }
 * {
   box-sizing: border-box;
